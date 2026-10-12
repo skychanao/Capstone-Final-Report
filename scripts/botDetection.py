@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load activity data
-df = pd.read_csv(r"outputs\godot_individual_activity.csv", parse_dates=['date'])
+df = pd.read_csv(r"outputs\godot_individual_activity_filtered.csv", parse_dates=['date'])
 
 # ==========================================
 # Measure 1: Name Matching

@@ -13,7 +13,6 @@ REPO_NAME = "godotengine/godot"
 
 START_DATE = datetime(2025, 9, 23, tzinfo=timezone.utc)
 END_DATE = datetime(2026, 9, 23, tzinfo=timezone.utc)
-SIX_MONTHS_AGO = datetime(2026, 3, 23, tzinfo=timezone.utc)
 
 auth = Auth.Token(GITHUB_TOKEN)
 g = Github(auth=auth)
