@@ -34,7 +34,16 @@ def fetch_activities():
             date = commit.commit.author.date
             
             if len(commit.parents) <= 1:
-                data.append({"user": login, "email": email, "activity_type": "commit", "date": date})
+                    data.append({
+                        "user": login, 
+                        "email": email, 
+                        "activity_type": "commit", 
+                        "date": date,
+                        "identifier": commit.sha,  
+                        "title": commit.commit.message.split('\n')[0],
+                        "comments": 0,
+                        "state": "merged"
+                    })
         except Exception:
             continue
 
@@ -48,13 +57,24 @@ def fetch_activities():
         login = issue.user.login if issue.user else "Unknown"
         act_type = "pull_request" if issue.pull_request else "issue"
         
-        data.append({"user": login, "email": None, "activity_type": act_type, "date": issue.created_at})
+        data.append({
+            "user": login, 
+            "email": None, 
+            "activity_type": act_type, 
+            "date": issue.created_at,
+            "identifier": issue.number, 
+            "title": issue.title,       
+            "comments": issue.comments, 
+            "state": issue.state        
+        })
 
     df = pd.DataFrame(data)
     df.to_csv(r"outputs\godot_individual_activity.csv", index=False)
-    print("\nData saved to outputs\godot_individual_activity.csv")
     return df
 
-df = fetch_activities()
-
-fetch_activities()
+if __name__ == "__main__":
+    print("Starting data extraction...")
+    
+    # Run the function exactly ONE time
+    df = fetch_activities()
+    print("done")
