@@ -19,6 +19,7 @@ df_filtered = df[~df['user'].apply(is_bot)].copy()
 
 # Measure 1: Exact Email Matching
 df_valid = df.dropna(subset=['email', 'user']).copy()
+df_valid = df_valid[~df_valid['email'].str.contains('noreply.github.com')]
 df_invalid = df_filtered['email'].isna()
 print(len(df_valid))
 print(len(df_invalid))
