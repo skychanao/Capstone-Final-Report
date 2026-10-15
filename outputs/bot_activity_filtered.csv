@@ -4933,7 +4933,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5351,GustJc,,issue,2026-08-31 09:44:28+00:00,123025,Editor crashes while moving docks to margins over scene tree outline,0,closed,GustJc
 5352,KoBeWi,,pull_request,2026-08-31 09:32:22+00:00,123024,Keep copy of UID cache for lookup during scan,1,closed,KoBeWi
 5353,fryingpanjoe,,pull_request,2026-08-31 09:14:13+00:00,123023,Make direction_to() consistent for all vector classes,2,closed,fryingpanjoe
-5354,PabloDevGit,,issue,2026-08-31 08:41:07+00:00,123022,"The ""Close documentation"" option does not appear",3,open,PabloDevGit
 5355,Cybo3D,,issue,2026-08-31 08:28:49+00:00,123021,Path3D nodes with `visible = false` are shown in the editor when switching between point tools,1,open,Cybo3D
 5356,bruvzg,,pull_request,2026-08-31 08:27:59+00:00,123020,[DisplayServer] Add support for hooking callbacks to some low level events.,0,open,bruvzg
 5357,KoBeWi,,pull_request,2026-08-31 08:09:43+00:00,123019,Fix crash when inspecting node in empty scene,1,closed,KoBeWi
@@ -4982,7 +4981,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5400,yedpodtrzitko,,pull_request,2026-08-29 17:07:07+00:00,122976,3D Editor: make `MeshInstance3D` tool button indicate it has options,1,open,yedpodtrzitko
 5401,stoofin,,issue,2026-08-29 16:56:07+00:00,122975,GDScript inner class method override indicators only use the top-level base class,2,open,stoofin
 5402,CharlExMachina,,issue,2026-08-29 16:51:47+00:00,122974,Contrast and visibility issues with default light theme options,1,open,CharlExMachina
-5403,PabloDevGit,,issue,2026-08-29 16:41:56+00:00,122973,The three dots go beyond their margin,7,open,PabloDevGit
 5404,shaobin1991,,pull_request,2026-08-29 16:12:42+00:00,122972,Fix C# Asinh documentation,1,closed,shaobin1991
 5405,tdaven,,pull_request,2026-08-29 16:00:53+00:00,122971,Fix 2D DDS files with mipmaps.,2,closed,tdaven
 5406,stoofin,,pull_request,2026-08-29 15:18:08+00:00,122970,Fix misleading MouseButton link in button_mask's documentation,0,open,stoofin
@@ -5014,7 +5012,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5432,CriticalQuark,,issue,2026-08-28 17:45:50+00:00,122944,Word Wrap and Word Wrap (Smart) for Label completely freezes Godot in specific configuration,1,closed,CriticalQuark
 5433,DexterFstone,,pull_request,2026-08-28 17:40:46+00:00,122943,Remove idle debugger tabs (inactive sessions),36,closed,DexterFstone
 5434,aaronfranke,,pull_request,2026-08-28 17:04:05+00:00,122942,Fix compiling for Linux Arm64 GCC in GLES3 mesh storage,0,open,aaronfranke
-5435,PabloDevGit,,issue,2026-08-28 16:54:44+00:00,122941,"Option ""Toggle Comment"" duplicated in the script editor",2,closed,PabloDevGit
 5436,BlueCube3310,,pull_request,2026-08-28 16:38:35+00:00,122940,CompressedTexture: Remove old incomplete texture streaming implementation,2,closed,BlueCube3310
 5437,Calinou,,pull_request,2026-08-28 16:01:23+00:00,122939,Update demo links to up-to-date Asset Store versions in the class reference,0,open,Calinou
 5438,LiveTrower,,pull_request,2026-08-28 15:50:22+00:00,122938,Hide Textures button when texture streaming is disabled,1,closed,LiveTrower
@@ -5039,7 +5036,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5457,bruvzg,,pull_request,2026-08-28 08:50:53+00:00,122918,"[Export] Windows, support exporting PDB debug symbols.",0,open,bruvzg
 5458,Chriz-code,,issue,2026-08-28 08:43:36+00:00,122917,Wrong custom performance monitors type when added later in runtime,2,open,Chriz-code
 5459,Ivorforce,,pull_request,2026-08-28 08:21:11+00:00,122916,Make `GDType` store an owning thread instead of assuming the main thread,2,closed,Ivorforce
-5460,PabloDevGit,,issue,2026-08-28 08:05:08+00:00,122915,Distraction-free mode disables the use of shortcuts,3,closed,PabloDevGit
 5461,mrcdk,,pull_request,2026-08-28 07:30:25+00:00,122914,Initialize area light variables with correct type,3,closed,mrcdk
 5462,Alexofp,,issue,2026-08-28 05:48:51+00:00,122913,Having a light() function breaks any shader in current Master branch,1,closed,Alexofp
 5463,bruvzg,,pull_request,2026-08-28 04:51:05+00:00,122912,[Docs] Use Unicode box drawing characters instead of plus and minus.,5,closed,bruvzg
@@ -5083,7 +5079,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5501,bruvzg,,pull_request,2026-08-27 09:21:17+00:00,122874,[macOS] Support exporting with debug symbols.,1,closed,bruvzg
 5502,QbieShay,,pull_request,2026-08-27 08:29:29+00:00,122873,Fix billboard in GPU particles,2,closed,QbieShay
 5503,Ivorforce,,pull_request,2026-08-27 08:25:37+00:00,122872,Add `ValuePtr` (like `std::indirect`). Halve `SignalData` size from ~176 -> ~80 bytes (12mb off editor),2,open,Ivorforce
-5504,PabloDevGit,,issue,2026-08-27 07:18:10+00:00,122871,Blue box appears when switching between editors,2,closed,PabloDevGit
 5505,tciviero,,pull_request,2026-08-27 06:51:45+00:00,122870,Fix: Corrupted scene load caused by misplaced character in scene file,0,open,tciviero
 5506,Schnorg,,pull_request,2026-08-27 06:34:57+00:00,122869,[3.x] Unify BVH versions between 3.x and 4.x,0,open,Schnorg
 5507,Schnorg,,pull_request,2026-08-27 05:59:20+00:00,122868,[3.x] Unify BVH versions between 3.x and 4.x,0,closed,Schnorg
@@ -5320,7 +5315,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5738,cosformula,,issue,2026-08-20 09:21:56+00:00,122636,SDFGI produces no indirect lighting with the Metal renderer on Apple M5 / Apple9 GPUs,0,closed,cosformula
 5739,Linie3,,pull_request,2026-08-20 09:11:07+00:00,122635,Fix copy / move node position miscalculation,1,closed,Linie3
 5740,Synzorasize,,pull_request,2026-08-20 09:08:34+00:00,122634,Update `argument_options.tscn` to load `AnimationPlayer` libraries in the most recent format,1,closed,Synzorasize
-5741,PabloDevGit,,issue,2026-08-20 08:58:19+00:00,122633,Godot does not show enum values in code hover tooltips,0,open,PabloDevGit
 5742,masa-nishio,,issue,2026-08-20 08:37:01+00:00,122632,Bezier Curve Editor: Key moving or paste lost Handle Mode setting,0,closed,masa-nishio
 5743,cosformula,,issue,2026-08-20 08:12:23+00:00,122631,VoxelGI and SDFGI inject π too much direct light because the Lambert 1 / PI factor is missing,2,closed,cosformula
 5744,TheDying0fLight,,issue,2026-08-20 08:06:45+00:00,122630,`EditorHelp` width resizing performance issues,0,open,TheDying0fLight
@@ -5519,7 +5513,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 5937,basteez,,pull_request,2026-08-15 10:57:14+00:00,122436,Surface orphan bits in @export_flags inspector after a flag is removed,0,closed,basteez
 5938,basteez,,pull_request,2026-08-15 10:22:24+00:00,122435,docs: Clarify Object custom-property name collision in class reference,1,closed,basteez
 5939,TheDying0fLight,,issue,2026-08-15 09:19:25+00:00,122434,`Find In Files`: Clicking on shader result does not switch to shader editor,0,closed,TheDying0fLight
-5940,PabloDevGit,,issue,2026-08-15 08:11:27+00:00,122433,Warning/Error line underline overlaps with text on the line below when line vertical spacing is reduced,1,open,PabloDevGit
 5941,chokomancarr,,issue,2026-08-15 05:08:06+00:00,122432,MultiMeshInstance2D indirect mode ignores instanceCount,0,open,chokomancarr
 5942,jamosdev,,issue,2026-08-15 00:40:15+00:00,122431,[3.x] RenderItemState constructor reset() prev_distance_field uninitialized,3,closed,jamosdev
 5943,Synzorasize,,pull_request,2026-08-14 23:54:31+00:00,122430,"Make native classes without assigned icons in the ""Inherited By"" or ""Inherits"" sections show their base class's icon in the class reference doc",0,open,Synzorasize
@@ -6846,7 +6839,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 7277,mrtripie,,issue,2026-07-08 15:26:21+00:00,121092,Editor crash when exporting project (D3D12?),3,open,mrtripie
 7278,chocola-mint,,issue,2026-07-08 15:16:39+00:00,121091,Custom export option with `PROPERTY_USAGE_SECRET` becomes invisible after project reload,0,open,chocola-mint
 7279,KoBeWi,,pull_request,2026-07-08 12:39:12+00:00,121090,Fix Wayland image clipboard,3,closed,KoBeWi
-7280,PabloDevGit,,issue,2026-07-08 12:38:22+00:00,121089,The animation section displays blue borders in situations that are not clear,4,open,PabloDevGit
 7281,enetheru,,pull_request,2026-07-08 11:46:39+00:00,121088,[DRAFT] Add option to build tracy-profiler client as a shared lib,5,closed,enetheru
 7282,ibe-denaux,,issue,2026-07-08 11:32:31+00:00,121087,AnimationNodeTransition cancels ongoing cross-fade when requested with a new transition,1,open,ibe-denaux
 7283,EdwardChanCH,,issue,2026-07-08 10:46:56+00:00,121086,`get_velocity_at_local_position()` in `GodotPhysicsDirectBodyState2D` ignores custom `center_of_mass`,2,closed,EdwardChanCH
@@ -7055,7 +7047,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 7486,syntaxerror247,,pull_request,2026-07-03 08:17:47+00:00,120883,[3.x] Android versions bump for 2026,3,closed,syntaxerror247
 7487,AdriaandeJongh,,pull_request,2026-07-03 08:15:36+00:00,120882,Hide 'Edit Now' checkbox in the 'Create New Project' dialog,5,closed,AdriaandeJongh
 7488,hubacekjakub,,issue,2026-07-03 07:48:09+00:00,120881,Windows: WINDOW_FLAG_MOUSE_PASSTHROUGH does not pass clicks through to external processes or the OS desktop,2,closed,hubacekjakub
-7489,PabloDevGit,,issue,2026-07-03 07:43:01+00:00,120880,"Error in the Editor's ""Manage Character Profiles"" menu",1,open,PabloDevGit
 7490,MileyHollenberg,,pull_request,2026-07-03 07:24:44+00:00,120879,Consolidate toggle buttons into one base class,5,open,MileyHollenberg
 7491,jxburros,,pull_request,2026-07-03 05:29:10+00:00,120878,Claude/app design aesthetic igy17t,0,closed,jxburros
 7492,sdsaati,,issue,2026-07-03 03:17:37+00:00,120877,HttpRequest weird error,14,closed,sdsaati
@@ -7141,7 +7132,7 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 7572,billystein25,,issue,2026-06-30 23:05:49+00:00,120797,Project manager layout slightly breaks after maximizing and restoring the window,12,closed,billystein25
 7573,brycehutchings,,pull_request,2026-06-30 22:58:05+00:00,120796,GDExtension: Avoid transient null virtual method store during lazy init,3,closed,brycehutchings
 7574,YeldhamDev,,pull_request,2026-06-30 22:51:54+00:00,120795,"Enable scroll hint in the ""Create New *"" dialog for asthetics",1,closed,YeldhamDev
-7575,hepta-gon,,pull_request,2026-06-30 22:00:10+00:00,120794,Fix incorrect per-instance shader parameters when exporting in headless mode,3,closed,hepta-gon
+7575,hepta-gon,,pull_request,2026-06-30 22:00:10+00:00,120794,Fix incorrect per-instance shader parameters when exporting in headless mode,3,closed,Heptagon
 7576,DeeJayLSP,,pull_request,2026-06-30 21:48:37+00:00,120793,GDScript: Remove unnecessary CoW where possible,5,open,DeeJayLSP
 7577,Thiago-Weiss,,pull_request,2026-06-30 21:48:17+00:00,120792,Fix godot crash in SpriteFrames in the AnimatedSprite2D and 3D,6,closed,Thiago-Weiss
 7578,KoBeWi,,pull_request,2026-06-30 21:27:53+00:00,120791,Reset dock slot margin index when hover ends,1,closed,KoBeWi
@@ -7593,7 +7584,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 8025,bruvzg,,pull_request,2026-06-16 11:17:32+00:00,120344,Inline `integrate_edge_hill` to work around Adreno shader compiler bug.,9,closed,bruvzg
 8026,FrancescoBonicelli,,issue,2026-06-16 09:24:52+00:00,120343,XRControllerTracker.GetInput C# method marked as obsolete,3,open,FrancescoBonicelli
 8027,DexterFstone,,issue,2026-06-16 07:52:33+00:00,120342,Dragging a file from the FileSystem in a large project is too slow,0,open,DexterFstone
-8028,PabloDevGit,,issue,2026-06-16 07:07:28+00:00,120341,Unstable CPU usage with minimal project,3,open,PabloDevGit
 8029,NoctemCat,,pull_request,2026-06-16 05:59:33+00:00,120340,[Web] Build web editor without assertions by default,1,closed,NoctemCat
 8030,YeldhamDev,,pull_request,2026-06-16 03:49:06+00:00,120339,Document that duplicating instantiated scenes modified at runtime can cause problems,1,closed,YeldhamDev
 8031,dginovker,,pull_request,2026-06-16 02:44:12+00:00,120338,Feature: Enable plugins to have their editor tab icons update when the theme changes,2,closed,dginovker
@@ -7620,7 +7610,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 8052,bruvzg,,pull_request,2026-06-15 10:19:17+00:00,120317,[TextServer/RTL] Allow aligning inline objects to the adjacent spans of text.,0,open,bruvzg
 8053,mgiuca,,pull_request,2026-06-15 09:07:21+00:00,120316,"ItemList, Tree: Fix analog stick moving through many items at once.",6,closed,mgiuca
 8054,bruvzg,,pull_request,2026-06-15 07:05:01+00:00,120315,[RTL] Make empty line behavior more consistent.,0,open,bruvzg
-8055,PabloDevGit,,issue,2026-06-15 06:58:48+00:00,120314,The expand icons are not working correctly,1,closed,PabloDevGit
 8056,bruvzg,,pull_request,2026-06-15 06:37:12+00:00,120313,[Docs] Add platform support notes to window flags.,1,closed,bruvzg
 8057,Noobot9k,,issue,2026-06-15 05:50:26+00:00,120312,Enabling Triplanar mapping on UV2 in a StandardMaterial3D breaks normal maps using UV1.,1,open,Noobot9k
 8058,bruvzg,,pull_request,2026-06-15 05:13:45+00:00,120311,[CI] Remove `build_deps` from Windows artifacts.,1,closed,bruvzg
@@ -7731,7 +7720,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 8163,Calinou,,pull_request,2026-06-11 16:27:13+00:00,120198,Link to 3D lights and shadows tutorial in AreaLight3D class documentation,1,closed,Calinou
 8164,mechalynx,,issue,2026-06-11 16:22:04+00:00,120197,Shader preview fails if preprocessor define is above shader_type,0,open,mechalynx
 8165,Calinou,,pull_request,2026-06-11 16:14:07+00:00,120196,Fix editor language not being switched until a restart in some locations,1,open,Calinou
-8166,PabloDevGit,,issue,2026-06-11 15:50:59+00:00,120195,The console isn't displaying text correctly,5,open,PabloDevGit
 8167,CarpenterBlue,,issue,2026-06-11 15:28:59+00:00,120194,MultimeshInstance2D skewed and stretched,2,closed,CarpenterBlue
 8168,creepyland,,issue,2026-06-11 14:26:58+00:00,120193,Bug with setting body `PROCESS_MODE_DISABLED` on `body_entered` signal,5,closed,creepyland
 8169,masoud-ata,,issue,2026-06-11 12:57:35+00:00,120192,[4.7.RC1] CollisionShape2D's shape cannot be changed immediately after adding it in editable inherited scene instance,8,closed,masoud-ata
@@ -8137,7 +8125,7 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 8570,TheConceptBoy,,issue,2026-05-26 16:19:31+00:00,119787,Crashing when clicking on GPUParticle3D and Sky resource in Environment.,4,open,TheConceptBoy
 8571,notroid5,,issue,2026-05-26 14:52:48+00:00,119786,Some buttons on SNES Controller for SNES mini are not working correctly/at all,8,closed,notroid5
 8572,notroid5,,issue,2026-05-26 14:06:01+00:00,119785,Some buttons on NES Controller for Switch are not working,6,closed,notroid5
-8573,hepta-gon,,pull_request,2026-05-26 13:58:01+00:00,119784,Fix flickering lighting on mesh-instances with non-uniform scale,3,closed,hepta-gon
+8573,hepta-gon,,pull_request,2026-05-26 13:58:01+00:00,119784,Fix flickering lighting on mesh-instances with non-uniform scale,3,closed,Heptagon
 8574,Pixelmusement,,issue,2026-05-26 13:42:46+00:00,119783,3D Viewport Grid in Editor is VERY Performance Heavy when using D3D12 instead of Vulkan,3,open,Pixelmusement
 8575,Shobits,,issue,2026-05-26 13:37:18+00:00,119782,Godot 4.6.3 hangs on exit when HTTP request is in progress,2,open,Shobits
 8576,AThousandShips,,pull_request,2026-05-26 13:21:47+00:00,119781,[CODEOWNERS] `modules/` improvements,2,closed,AThousandShips
@@ -8234,7 +8222,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 8667,TokageItLab,,pull_request,2026-05-23 16:03:32+00:00,119689,Fix the documentation for some SkeletonModifier3Ds' rest,1,closed,TokageItLab
 8668,elzewyr,,issue,2026-05-23 13:45:19+00:00,119688,Non-zero LIGHTX_COLOR 1 & 3 when lights aren't in the scene,11,closed,elzewyr
 8669,vilmt,,issue,2026-05-23 10:28:11+00:00,119687,ShapeCast3D ignores immediate collisions,5,open,vilmt
-8670,PabloDevGit,,issue,2026-05-23 09:41:17+00:00,119686,Excessive icon spacing in the Scene Tree dock pushes node names out of view,2,open,PabloDevGit
 8671,AdriaandeJongh,,issue,2026-05-23 08:27:01+00:00,119685,Theme preview's `+` button doesn't reposition after dragging in new preview,0,closed,AdriaandeJongh
 8672,AdriaandeJongh,,issue,2026-05-23 08:18:30+00:00,119684,Theme tab closes & preview doesn't persist over editor restarts,0,open,AdriaandeJongh
 8673,sockeye-d,,issue,2026-05-23 07:52:06+00:00,119683,`_get_line_syntax_highlighting` is `virtual const` but non-const in source,4,open,sockeye-d
@@ -8477,7 +8464,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 8910,DeeJayLSP,,pull_request,2026-05-13 22:49:42+00:00,119445,Suppress GCC 16's `sfinae-incomplete` warning,5,closed,DeeJayLSP
 8911,mattbearman,,pull_request,2026-05-13 21:21:12+00:00,119444,Implement get_latency method for coreaudio on MacOS,0,open,mattbearman
 8912,KoBeWi,,pull_request,2026-05-13 20:52:14+00:00,119443,Add pseudolocalization preview to the editor,3,closed,KoBeWi
-8913,PabloDevGit,,issue,2026-05-13 19:22:29+00:00,119442,Godot does not save editor settings,3,closed,PabloDevGit
 8914,QbieShay,,pull_request,2026-05-13 18:25:40+00:00,119441,"Up default cube subdivisions to 2, so that tests scenes with area light dont look broken",9,closed,QbieShay
 8915,Ferinzz,,issue,2026-05-13 17:55:46+00:00,119440,call function creating an empty array before calling GDE method pointer,16,open,Ferinzz
 8916,mihe,,pull_request,2026-05-13 17:18:30+00:00,119439,Fix `PopupMenu` submenu positioning not accounting for margins,1,closed,mihe
@@ -8809,7 +8795,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 9242,mihe,,issue,2026-04-30 13:49:20+00:00,119113,`PopupMenu` search can erroneously hide submenus,0,closed,mihe
 9243,Lefrec,,pull_request,2026-04-30 13:42:16+00:00,119112,Fix audio bus name update,1,closed,Lefrec
 9244,anShigenta,,issue,2026-04-30 13:34:34+00:00,119111,VoxelGI uses parent node (instead of scene node) to bake lighting,3,open,anShigenta
-9245,PabloDevGit,,issue,2026-04-30 09:37:06+00:00,119110,"Missing ""Toggle Full Screen"" option in detached Script Editor window",3,open,PabloDevGit
 9246,Lefrec,,issue,2026-04-30 09:22:46+00:00,119109,AudioServer.set_bus_name doesn't change bus name in editor,1,closed,Lefrec
 9247,mihe,,pull_request,2026-04-30 08:52:04+00:00,119108,Add cleanup of `EditorInspector` clipboard contents,1,closed,mihe
 9248,mihe,,issue,2026-04-30 08:48:51+00:00,119107,Closing editor with `GDScript` resource in clipboard causes crash,0,closed,mihe
@@ -9440,56 +9425,14 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 9874,fichtenmayermario,,issue,2026-04-12 06:45:44+00:00,118480,HDR with Wayland (Ubuntu 25.04) can't create a Window with HDR support,22,closed,fichtenmayermario
 9875,MatthiasBae,,issue,2026-04-12 04:59:21+00:00,118479,[C#] Inherited scene tries to access the base scene references which are disposed,3,closed,MatthiasBae
 9876,vaner-org,,pull_request,2026-04-12 04:56:05+00:00,118478,Fix padding on Tree columns with only buttons,8,open,vaner-org
-9877,rayamazaky,,pull_request,2026-04-12 04:50:33+00:00,118477,Add mutex to AudioEffectRecordInstance to prevent data races,6,closed,rayamazaky
-9878,rayamazaky,,pull_request,2026-04-12 04:50:32+00:00,118476,Replace unbounded alloca() with heap allocation in RigidBody3D,0,closed,rayamazaky
-9879,rayamazaky,,pull_request,2026-04-12 04:50:32+00:00,118475,Fix memory leak in LightStorage::set_max_lights() and set_max_reflection_probes(),0,closed,rayamazaky
-9880,rayamazaky,,pull_request,2026-04-12 04:50:32+00:00,118474,Fix out-of-bounds FIFO access in SMBPitchShift when fftFrameSize changes,0,closed,rayamazaky
 9881,asperkraken,,issue,2026-04-12 04:47:28+00:00,118473,RigidBody2D separates from CollisionShape2D and is invisible in editor,2,closed,asperkraken
-9882,rayamazaky,,pull_request,2026-04-12 04:47:11+00:00,118472,Fix division by zero in CharacterBody real_velocity when delta is 0,0,closed,rayamazaky
-9883,rayamazaky,,pull_request,2026-04-12 04:47:11+00:00,118471,Add null checks for reflection probes in LightStorage,0,closed,rayamazaky
-9884,rayamazaky,,pull_request,2026-04-12 04:47:11+00:00,118470,Add null check for decals in TextureStorage,0,closed,rayamazaky
-9885,rayamazaky,,pull_request,2026-04-12 04:44:31+00:00,118469,Dispatch PhysicsServer WrapMT is_flushing_queries() and get_process_info() through command queue,0,closed,rayamazaky
-9886,rayamazaky,,pull_request,2026-04-12 04:44:30+00:00,118468,Fix null dereference in AudioEffectCompressor when sidechain buffer is unavailable,0,closed,rayamazaky
-9887,rayamazaky,,pull_request,2026-04-12 04:44:08+00:00,118467,Fix division by zero in AudioRBResampler when target_mix_rate is 0,0,closed,rayamazaky
-9888,rayamazaky,,pull_request,2026-04-12 04:44:08+00:00,118466,Add missing audio driver lock in AudioServer::add_bus() and move_bus(),0,closed,rayamazaky
-9889,rayamazaky,,pull_request,2026-04-12 04:44:08+00:00,118465,Add ObjectDB lifetime check in CharacterBody2D (matches 3D version),0,closed,rayamazaky
-9890,rayamazaky,,pull_request,2026-04-12 04:44:08+00:00,118464,Fix integer overflow in RenderingDevice::_texture_create_reinterpret_buffer(),0,closed,rayamazaky
-9891,rayamazaky,,issue,2026-04-12 04:28:07+00:00,118463,PhysicsServer*WrapMT::is_flushing_queries() and get_process_info() bypass command queue (race condition),0,closed,rayamazaky
-9892,rayamazaky,,issue,2026-04-12 04:28:07+00:00,118462,SMBPitchShift out-of-bounds read via negative FIFO index when parameters change,0,closed,rayamazaky
-9893,rayamazaky,,issue,2026-04-12 04:28:07+00:00,118460,AudioEffectRecord accesses shared state from 3 threads with zero synchronization,0,closed,rayamazaky
-9894,rayamazaky,,issue,2026-04-12 04:28:07+00:00,118461,Unbounded alloca() in RigidBody3D can overflow stack,0,closed,rayamazaky
-9895,rayamazaky,,issue,2026-04-12 04:28:07+00:00,118459,LightStorage::set_max_lights() and set_max_reflection_probes() leak previous allocations on re-call,0,closed,rayamazaky
 9896,syntaxerror247,,pull_request,2026-04-12 04:27:22+00:00,118458,[WIP] Android Editor: Add a coding symbols panel in script editor,0,open,syntaxerror247
-9897,rayamazaky,,issue,2026-04-12 04:27:06+00:00,118457,Null pointer dereference on freed reflection probes in LightStorage,0,closed,rayamazaky
-9898,rayamazaky,,issue,2026-04-12 04:27:06+00:00,118456,AudioEffectCompressor null dereference when sidechain buffer index is out of range,0,closed,rayamazaky
-9899,rayamazaky,,issue,2026-04-12 04:27:06+00:00,118455,Null pointer dereference on freed decals in TextureStorage,0,closed,rayamazaky
-9900,rayamazaky,,issue,2026-04-12 04:27:06+00:00,118454,CharacterBody real_velocity division by zero on first frame from _process(),0,closed,rayamazaky
-9901,rayamazaky,,issue,2026-04-12 04:26:21+00:00,118453,Integer overflow in RenderingDevice::_texture_create_reinterpret_buffer() buffer size calculation,0,closed,rayamazaky
-9902,rayamazaky,,issue,2026-04-12 04:26:21+00:00,118452,AudioRBResampler::mix() divides by zero when target_mix_rate is 0,0,closed,rayamazaky
-9903,rayamazaky,,issue,2026-04-12 04:26:21+00:00,118451,CharacterBody2D missing ObjectDB lifetime check for platform_rid (use-after-free),0,closed,rayamazaky
-9904,rayamazaky,,issue,2026-04-12 04:26:01+00:00,118450,AudioServer::add_bus() and move_bus() modify buses vector without audio driver lock,0,closed,rayamazaky
 9905,Mingxi-Z,,pull_request,2026-04-12 04:04:45+00:00,118449,Rendering: Skip shadow rendering for inactive particles,1,closed,Mingxi-Z
 9906,mikest,,issue,2026-04-12 02:26:24+00:00,118448,Method tracks do not respect stretch_time_scale when running with animation_blend_tree,5,closed,mikest
 9907,lessthen3,,issue,2026-04-12 01:40:40+00:00,118447,Monitor identification broken for window with certain configs,0,open,lessthen3
 9908,kevinlam508,,pull_request,2026-04-12 01:33:52+00:00,118446,"Revert ""Fix EditorSpinSlider drag exceeding min/max boundaries""",1,closed,kevinlam508
 9909,kevinlam508,,issue,2026-04-12 01:33:27+00:00,118445,Cannot drag to modify many range properties in editor,0,closed,kevinlam508
 9910,Infiland,,pull_request,2026-04-12 00:56:50+00:00,118444,Core: Fix Dictionary iteration hang with freed Object keys,7,open,Infiland
-9911,rayamazaky,,pull_request,2026-04-12 00:52:49+00:00,118443,Check Vector::resize() return values in packed array deserialization,0,closed,rayamazaky
-9912,rayamazaky,,pull_request,2026-04-12 00:52:27+00:00,118442,Fix division by zero in Basis::set_quaternion() with zero quaternion,0,closed,rayamazaky
-9913,rayamazaky,,pull_request,2026-04-12 00:52:27+00:00,118441,Fix memory leak in StreamPeerGZIP::_start() when zlib init fails,0,closed,rayamazaky
-9914,rayamazaky,,pull_request,2026-04-12 00:52:27+00:00,118440,Add null checks to GDExtension object API functions,1,closed,rayamazaky
-9915,rayamazaky,,pull_request,2026-04-12 00:52:01+00:00,118439,Fix BIG_ENDIAN_ENABLED byte-swap code calling .ptr() on raw pointers,2,closed,rayamazaky
-9916,rayamazaky,,pull_request,2026-04-12 00:52:01+00:00,118438,Fix race conditions in WorkerThreadPool on shared HashMaps,0,closed,rayamazaky
-9917,rayamazaky,,pull_request,2026-04-12 00:52:01+00:00,118436,Fix XMLParser::close() calling memdelete_arr(data) instead of memdelete_arr(data_copy),0,closed,rayamazaky
-9918,rayamazaky,,pull_request,2026-04-12 00:52:01+00:00,118437,Fix null pointer dereference in Callable::callp() and rpcp() in release builds,0,closed,rayamazaky
-9919,rayamazaky,,issue,2026-04-12 00:22:45+00:00,118435,Unchecked Vector::resize() in resource deserialization allows null dereference from malformed .res files,0,closed,rayamazaky
-9920,rayamazaky,,issue,2026-04-12 00:22:20+00:00,118434,GDExtension interface functions crash when passed null object pointers,0,closed,rayamazaky
-9921,rayamazaky,,issue,2026-04-12 00:21:56+00:00,118433,Basis::set_quaternion() divides by zero when quaternion length is zero,0,closed,rayamazaky
-9922,rayamazaky,,issue,2026-04-12 00:21:28+00:00,118432,StreamPeerGZIP::_start() leaks ctx memory when deflateInit2/inflateInit2 fails,0,closed,rayamazaky
-9923,rayamazaky,,issue,2026-04-12 00:21:08+00:00,118431,XMLParser::close() calls memdelete_arr(data) instead of memdelete_arr(data_copy),0,closed,rayamazaky
-9924,rayamazaky,,issue,2026-04-12 00:20:44+00:00,118430,WorkerThreadPool has race conditions on shared HashMaps (named_pools and groups),0,closed,rayamazaky
-9925,rayamazaky,,issue,2026-04-12 00:20:09+00:00,118429,BIG_ENDIAN_ENABLED code in resource_format_binary.cpp calls .ptr() on raw pointers (won't compile),1,closed,rayamazaky
-9926,rayamazaky,,issue,2026-04-12 00:19:42+00:00,118428,Callable::callp() and rpcp() crash on freed objects in release builds due to null guard compiled out,0,closed,rayamazaky
 9927,AntonXCM,,issue,2026-04-11 20:54:04+00:00,118427,Saving PackedScene when Node is stored in metadata results into infinite loop,3,open,AntonXCM
 9928,caphindsight,,issue,2026-04-11 20:42:04+00:00,118426,"Re-importing assets via the import pipeline breaks UID references, clutters the output with warnings",5,open,caphindsight
 9929,MarianoGnu,,issue,2026-04-11 20:23:47+00:00,118425,"Could not find type ""GDScriptFunctionState"" in the current scope.",1,open,MarianoGnu
@@ -9687,7 +9630,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 10121,mihe,,pull_request,2026-04-05 19:18:58+00:00,118227,Replace `Callable::is_valid` with `is_null` in Jolt module,6,closed,mihe
 10122,Infiland,,pull_request,2026-04-05 18:33:24+00:00,118226,Editor: Add resumable download with retry for export templates,10,closed,Infiland
 10123,Hrothdel,,pull_request,2026-04-05 18:06:20+00:00,118225,Fix editor unsaved scenes getting file path updates,3,closed,Hrothdel
-10124,PabloDevGit,,issue,2026-04-05 17:34:51+00:00,118224,Locking nodes doesn't prevent them from being repositioned within the tree.,1,closed,PabloDevGit
 10125,MarianoGnu,,pull_request,2026-04-05 17:24:40+00:00,118223,Implement Swizzling for Vectors and Color types (no zero templates),0,open,MarianoGnu
 10126,Genouka,,issue,2026-04-05 16:11:49+00:00,118222,Rendering error on Oppo pad,0,closed,Genouka
 10127,HolonProduction,,pull_request,2026-04-05 15:21:10+00:00,118221,Autocompletion: Remove unnecessary `HashMap` copy,2,closed,HolonProduction
@@ -9949,7 +9891,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 10385,chlingzool,,issue,2026-03-29 11:20:46+00:00,117960,Polygon2D's bug. disappear or don't render.,8,open,chlingzool
 10386,TokageItLab,,pull_request,2026-03-29 10:45:54+00:00,117959,Fix SplineIK crash cases,2,closed,TokageItLab
 10387,warriormaster12,,pull_request,2026-03-29 09:54:57+00:00,117958,Implement fuzzy search for `PopupMenu` search bar,3,closed,warriormaster12
-10388,PabloDevGit,,issue,2026-03-29 09:00:04+00:00,117957,Issue with the tilemaplayer node,0,open,PabloDevGit
 10389,marcozee03,,pull_request,2026-03-29 08:19:45+00:00,117956,Fix crash caused by input configuration dialog,2,closed,marcozee03
 10390,marcozee03,,issue,2026-03-29 08:13:36+00:00,117955,Input Event Configuration Dialog Crashes Engine when Joypad Actions are selected,3,closed,marcozee03
 10391,TokageItLab,,issue,2026-03-29 06:47:09+00:00,117954,The AnimationTrackEditor in AnimationTree hides the AnimationTree tab when a key is selected,0,open,TokageItLab
@@ -10487,7 +10428,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 10923,ashelleyPurdue,,issue,2026-03-14 18:21:32+00:00,117421,4.5.1: Random `load_steps=0` entry being added to material .tres file,1,closed,ashelleyPurdue
 10924,JoNax97,,issue,2026-03-14 18:18:16+00:00,117420,Found an instance of GD0303: The parent symbol of a type argument that must be Variant compatible was not handled,1,open,JoNax97
 10925,duianto,,issue,2026-03-14 17:31:49+00:00,117419,"Exported variable set to null in scene file, when saving script with error",0,open,duianto
-10926,PabloDevGit,,issue,2026-03-14 16:11:08+00:00,117418,The panning icon is the same as the move icon,3,open,PabloDevGit
 10927,Chaosus,,pull_request,2026-03-14 13:50:53+00:00,117417,Add a bunch of texture shader functions with an offset,6,closed,Chaosus
 10928,Isaac-SOL,,issue,2026-03-14 13:42:08+00:00,117416,In-editor signal connector always creates a new function if the script contains an overindented dictionary,2,open,Isaac-SOL
 10929,hsandt,,issue,2026-03-14 13:26:25+00:00,117415,"Duplicating child node of scene instance or inherited scene copies signal binding locked state (yellow), preventing disconnecting until editor restart",2,open,hsandt
@@ -10540,7 +10480,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 10976,Sungle4232,,issue,2026-03-12 11:25:13+00:00,117368,"Trying to get parent of ""area"" given by _on_area_entered or _on_area_shape_entered signals returns sceene root node instead",2,closed,Sungle4232
 10977,Sungle4232,,issue,2026-03-12 11:18:24+00:00,117367,"When using .get_parent() on an area passed through _on_area_entered signal, the root node of the scene gets returned instead",0,closed,Sungle4232
 10978,akien-mga,,pull_request,2026-03-12 11:04:12+00:00,117366,Remove unused includes in `editor` with clangd-tidy,0,closed,akien-mga
-10979,PabloDevGit,,issue,2026-03-12 10:21:17+00:00,117365,Shortcuts in script editor are not working,2,closed,PabloDevGit
 10980,heroboy,,issue,2026-03-12 10:00:53+00:00,117364,Wrong native popup menu in dual screen,0,open,heroboy
 10981,bruvzg,,pull_request,2026-03-12 09:56:44+00:00,117363,Improve `OS.is_process_running` error messages.,1,closed,bruvzg
 10982,h0lley,,issue,2026-03-12 09:51:42+00:00,117362,Unrecognized UID on editor start for files such as default_bus_layout and main_scene,37,closed,h0lley
@@ -11003,7 +10942,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 11439,TheDying0fLight,,issue,2026-02-28 22:14:28+00:00,116904,`Bottom Panel` clipping with small editor size,1,closed,TheDying0fLight
 11440,Repiteo,,pull_request,2026-02-28 20:55:15+00:00,116903,Thirdparty: Index patches by Pull Request id; unify naming convention,3,open,Repiteo
 11441,CodeSmith32,,issue,2026-02-28 20:45:10+00:00,116902,"Duplicating a Node in the editor fails when it has tool-generated, owned children with children",3,open,CodeSmith32
-11442,PabloDevGit,,issue,2026-02-28 20:36:57+00:00,116901,Path2D line rendering visual mismatch in the editor,5,open,PabloDevGit
 11443,IceflowRE,,pull_request,2026-02-28 19:21:26+00:00,116900,Add `add_submenu_node_item` to POT generation,1,closed,IceflowRE
 11444,dalexeev,,pull_request,2026-02-28 18:56:23+00:00,116899,GDScript: Deprecate `type_exists()` global function,1,closed,dalexeev
 11445,XiNNiW,,issue,2026-02-28 18:23:23+00:00,116898,[BUG] bone2d polygon assignment does not persist after edit,0,open,XiNNiW
@@ -11021,9 +10959,7 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 11457,Sauroniux,,pull_request,2026-02-28 11:53:17+00:00,116886,Fix collision cache being out of date after adding a new setting,0,open,Sauroniux
 11458,Scrawach,,pull_request,2026-02-28 11:52:21+00:00,116885,Fix different behavior between debug and release exports for invalid `await` on runtime null,12,open,Scrawach
 11459,Ivorforce,,pull_request,2026-02-28 11:28:39+00:00,116884,Auto-request review for usability when label is applied.,6,closed,Ivorforce
-11460,PabloDevGit,,issue,2026-02-28 11:02:10+00:00,116883,Double-clicking the visibility icon changes the editor coordinates,1,closed,PabloDevGit
 11461,Zehir,,pull_request,2026-02-28 10:57:42+00:00,116882,Fix able to delete metadata on read-only object,2,closed,Zehir
-11462,PabloDevGit,,issue,2026-02-28 10:50:54+00:00,116881,Godot won't let me select an animation if the material is expanded,1,closed,PabloDevGit
 11463,Nodragem,,issue,2026-02-28 10:10:11+00:00,116880,Using Inner Class Resource in a Resource does not work,2,closed,Nodragem
 11464,arkology,,pull_request,2026-02-28 09:58:58+00:00,116879,Improve `CanvasItemEditor` and `Node3DEditor` minimum size,0,closed,arkology
 11465,yellowbigdog,,issue,2026-02-28 06:45:09+00:00,116878,GDScript: _get_property_list() fails to update or behaves inconsistently compared to C#,4,open,yellowbigdog
@@ -11528,10 +11464,8 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 11968,Calinou,,pull_request,2026-02-16 20:21:21+00:00,116373,Document project settings that only have an effect when using GodotPhysics3D,3,closed,Calinou
 11969,duran55,,issue,2026-02-16 19:18:46+00:00,116372,Unable to preview animations when both AnimationPlayer and AnimationTree are present,1,open,duran55
 11970,stuartcarnie,,pull_request,2026-02-16 19:18:37+00:00,116371,Metal: Various fixes,6,closed,stuartcarnie
-11971,PabloDevGit,,issue,2026-02-16 19:07:11+00:00,116370,Visible Navigation is not rendered when the project is paused or at a breakpoint,3,closed,PabloDevGit
 11972,HolonProduction,,pull_request,2026-02-16 19:06:23+00:00,116369,LSP: Fix singleton registration,1,closed,HolonProduction
 11973,ColinSORourke,,pull_request,2026-02-16 18:49:06+00:00,116368,Fix Tool Script behaviors requiring restart.,10,closed,ColinSORourke
-11974,PabloDevGit,,issue,2026-02-16 18:45:55+00:00,116367,"The ""Game"" tab gets broken/blank when switching editor tabs.",1,open,PabloDevGit
 11975,Calinou,,pull_request,2026-02-16 18:26:34+00:00,116366,Fix startup errors/warnings on X11 when the Prefer Wayland editor setting is enabled,2,closed,Calinou
 11976,dalexeev,,pull_request,2026-02-16 18:03:48+00:00,116365,Core: Add validation for property bindings,1,closed,dalexeev
 11977,Calinou,,issue,2026-02-16 17:37:24+00:00,116364,"Wireframe debug draw mode displays backfaces in Compatibility, but not Forward+/Mobile",0,closed,Calinou
@@ -12067,7 +12001,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 12509,paulcnova,,issue,2026-02-03 17:24:14+00:00,115831,`PROPERTY_HINT_TYPE_STRING` returns the path to the script for a custom node but the name of the node for a default node,4,open,paulcnova
 12510,bruvzg,,pull_request,2026-02-03 17:21:42+00:00,115830,[iOS] Include fallback locale to the supported locale list in the exported app.,0,open,bruvzg
 12511,dalexeev,,pull_request,2026-02-03 17:16:34+00:00,115829,GDScript: Fix compiler generates incorrect bytecode for conversion return,3,closed,dalexeev
-12512,PabloDevGit,,issue,2026-02-03 17:16:25+00:00,115828,Godot fails to return the bottom panel to the state it was in before running the project.,3,open,PabloDevGit
 12513,bruvzg,,pull_request,2026-02-03 17:14:48+00:00,115827,[Export] Load translation files to check locale for ICU data export.,2,closed,bruvzg
 12514,Scrawach,,issue,2026-02-03 17:04:53+00:00,115826,Editor inline color picker not appears at start,1,closed,Scrawach
 12515,mwael-labs,,issue,2026-02-03 16:59:59+00:00,115825,Extra checkbox for `Looping` in AudioStreamPlayer2D node,3,open,mwael-labs
@@ -12371,9 +12304,7 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 12816,Calinou,,pull_request,2026-01-28 18:08:32+00:00,115521,Add `forward+` and `compatibility` rendering method aliases to CLI for convenience,3,closed,Calinou
 12817,Calinou,,pull_request,2026-01-28 18:00:24+00:00,115520,Rename glow structs in Compatibility renderer to match code style guidelines,2,closed,Calinou
 12818,thygrrr,,pull_request,2026-01-28 17:49:37+00:00,115519,Allow libgodot (mono) be loaded via Hostfxr,3,closed,thygrrr
-12819,PabloDevGit,,issue,2026-01-28 17:38:31+00:00,115518,Godot resets Atlas selection when switching between TileMapLayer nodes,5,open,PabloDevGit
 12820,DexterFstone,,issue,2026-01-28 17:31:35+00:00,115517,"[4.7, Master] Crash and rendering problem",1,closed,DexterFstone
-12821,PabloDevGit,,issue,2026-01-28 17:27:34+00:00,115516,Context menu issue in the TilemapLayer Tileset dock,4,open,PabloDevGit
 12822,syntaxerror247,,pull_request,2026-01-28 17:07:25+00:00,115515,Fix crash in `StorageScope.kt` on Android,3,closed,syntaxerror247
 12823,Arjun-singh-rawatt,,pull_request,2026-01-28 16:41:18+00:00,115514,Clarify `Camera3D.set_frustum()` size parameter,4,closed,Arjun-singh-rawatt
 12824,Gabrunken,,pull_request,2026-01-28 15:26:57+00:00,115513,Fix script editor search arrow behavior,4,closed,Gabrunken
@@ -12721,8 +12652,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 13168,caphindsight,,issue,2026-01-20 09:51:29+00:00,115168,Renaming the main scene removes highlight from filesystem dock,5,open,caphindsight
 13169,caphindsight,,issue,2026-01-20 09:37:30+00:00,115167,Framerate drops in the 3D viewport,7,open,caphindsight
 13170,bruvzg,,pull_request,2026-01-20 09:08:44+00:00,115166,Add Fossilize to the disabled Vulkan layer list for the editor.,1,closed,bruvzg
-13171,PabloDevGit,,issue,2026-01-20 08:36:12+00:00,115165,Erasing with a pattern selected uses a single tile instead of the pattern's shape.,1,open,PabloDevGit
-13172,PabloDevGit,,issue,2026-01-20 08:25:49+00:00,115164,"After copying/cutting, the tile editor behaves strangely in the ""Patterns"" section.",1,open,PabloDevGit
 13173,akien-mga,,pull_request,2026-01-20 08:11:27+00:00,115163,"Revert ""Fix fixed size flag on StandardMaterial3D when rendering in stereo",1,closed,akien-mga
 13174,mhd-anshad-05,,issue,2026-01-20 07:26:45+00:00,115162,Stuck in fullscreen mode when toggling (cannot return to windowed),4,closed,mhd-anshad-05
 13175,bruvzg,,pull_request,2026-01-20 06:19:21+00:00,115161,Do not update script editor before scene root init.,1,closed,bruvzg
@@ -12969,7 +12898,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 13418,Nintorch,,pull_request,2026-01-13 11:38:47+00:00,114918,Document joypad vibration support over USB on macOS,5,closed,Nintorch
 13419,TheDying0fLight,,pull_request,2026-01-13 11:28:42+00:00,114917,Refactor `TextEditor` and `ScriptTextEditor`,3,closed,TheDying0fLight
 13420,KoBeWi,,pull_request,2026-01-13 11:25:53+00:00,114916,Tweak quick open recursion error,1,closed,KoBeWi
-13421,PabloDevGit,,issue,2026-01-13 10:27:22+00:00,114915,Audio cannot be restored without restarting the project,3,closed,PabloDevGit
 13422,nubels,,pull_request,2026-01-13 10:24:42+00:00,114914,Add new inherited script item to the pop-up menu of the filesystem dock,5,open,nubels
 13423,mieldepoche,,issue,2026-01-13 10:14:55+00:00,114913,scrollable area shadows only show at the top and not at the bottom,4,open,mieldepoche
 13424,zenorbi,,issue,2026-01-13 09:51:24+00:00,114912,Cannot import multi dot extensions,0,open,zenorbi
@@ -13034,7 +12962,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 13483,jinyangcruise,,issue,2026-01-11 09:50:19+00:00,114853,Unnecessary `metadata/_custom_type_script` saved in .tscn files,5,open,jinyangcruise
 13484,arkology,,pull_request,2026-01-11 08:23:37+00:00,114852,Fix gray bar of embed game window in Windows,1,closed,arkology
 13485,Nintorch,,pull_request,2026-01-11 08:20:04+00:00,114851,Change return type for `Input.set_joy_light()` from `bool` to `void`,1,closed,Nintorch
-13486,PabloDevGit,,issue,2026-01-11 07:57:05+00:00,114850,"Inappropriate spacing and layout in the ""Please Confirm"" deletion dialog",2,open,PabloDevGit
 13487,TokageItLab,,pull_request,2026-01-11 06:59:00+00:00,114849,Highlight selected points in Path3DEditor,6,closed,TokageItLab
 13488,TheRealBiggs,,issue,2026-01-11 05:37:26+00:00,114848,AnimationPlaybackTrack's sub AnimationPlayer discrete key is not processed in the frame which just stopping parent AnimationPlayer,1,open,TheRealBiggs
 13489,SuperTemich2005,,pull_request,2026-01-11 04:53:35+00:00,114847,Scene: Fix `LineEdit.set_editable` to capture text focus when enabled.,8,closed,SuperTemich2005
@@ -13177,7 +13104,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 13629,KoBeWi,,pull_request,2026-01-07 20:31:24+00:00,114702,Improve usage of textfile extensions,0,open,KoBeWi
 13630,adamscott,,issue,2026-01-07 20:21:04+00:00,114701,"[Web editor] Cannot install projects, ""Install"" button disabled",2,closed,adamscott
 13631,KoBeWi,,pull_request,2026-01-07 19:37:25+00:00,114700,Paste as Sibling right below the node,1,closed,KoBeWi
-13632,PabloDevGit,,issue,2026-01-07 19:13:44+00:00,114699,The selection highlight appears misaligned,4,closed,PabloDevGit
 13633,KoBeWi,,pull_request,2026-01-07 19:11:19+00:00,114698,Don't filter EditorFileDialog files with global access,1,closed,KoBeWi
 13634,brycehutchings,,pull_request,2026-01-07 18:45:52+00:00,114697,Fix OpenXR depth submission data dropped,5,closed,brycehutchings
 13635,Grandro,,issue,2026-01-07 18:33:57+00:00,114696,"`Expression` is unable to `parse` `StringName` Syntax `&""""`",3,open,Grandro
@@ -13411,7 +13337,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 13869,Skaruts,,issue,2025-12-30 19:15:37+00:00,114455,Material resource_name is not preserved during GLTF export,0,open,Skaruts
 13870,ASamBlur,,pull_request,2025-12-30 18:34:55+00:00,114454,Remove unused variable in `editor_properties.cpp`,1,closed,ASamBlur
 13871,BenLubar,,pull_request,2025-12-30 18:21:22+00:00,114453,"Make Godot compile with 3D physics disabled again, again.",1,closed,BenLubar
-13872,PabloDevGit,,issue,2025-12-30 17:15:52+00:00,114452,Shader Editor opens automatically when selecting animations,2,closed,PabloDevGit
 13873,lostminds,,issue,2025-12-30 15:52:52+00:00,114451,Editor windows in background unexpectedly reorder when hover tooltips close,1,closed,lostminds
 13874,MadeScientist,,issue,2025-12-30 15:45:13+00:00,114450,Increment doesn't work when keynext AnimatedSprite2D/3D's frame,5,open,MadeScientist
 13875,ndarilek,,pull_request,2025-12-30 15:43:48+00:00,114449,GUI: Add accessibility region role for landmark navigation,4,closed,ndarilek
@@ -13561,7 +13486,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14019,tom-thompson,,pull_request,2025-12-23 18:51:57+00:00,114304,Redirect the entire HTTP range other than 300 which doesn't have standard ways…,2,open,tom-thompson
 14020,yusuf123-3-dev,,issue,2025-12-23 18:46:57+00:00,114303,Rendering driver affects the thickness of grid and other gizmos,2,open,yusuf123-3-dev
 14021,tom-thompson,,issue,2025-12-23 18:36:38+00:00,114302,godot does not correctly handle redirects in http_request.cpp,1,open,tom-thompson
-14022,PabloDevGit,,issue,2025-12-23 18:20:36+00:00,114301,Godot does not recognize my controller,1,closed,PabloDevGit
 14023,TheDying0fLight,,pull_request,2025-12-23 17:20:13+00:00,114300,`Find and Replace` on unsaved changes (non-built-in GDScript and GDShader code) ,1,closed,TheDying0fLight
 14024,fabiosantoscode,,issue,2025-12-23 16:57:51+00:00,114299,4.6 cannot cast raw nested arrays to Array[PackedInt32Array],4,closed,fabiosantoscode
 14025,thedinyamum,,issue,2025-12-23 16:30:44+00:00,114298,Alpha heavy scenes have increased GPU & CPU time in 4.6 Beta 2 compared to 4.5.1 Stable,3,closed,thedinyamum
@@ -13580,7 +13504,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14038,dugramen,,pull_request,2025-12-22 14:39:44+00:00,114285,Add StyleBox transition animations,24,open,dugramen
 14039,Levrault,,issue,2025-12-22 14:26:39+00:00,114284,Blender 5.0 To Godot - Ik Animation scaling issue,4,closed,Levrault
 14040,KoBeWi,,pull_request,2025-12-22 13:24:43+00:00,114283,Change TabContainer's popup button into real Button,3,closed,KoBeWi
-14041,PabloDevGit,,issue,2025-12-22 13:15:18+00:00,114282,Bug? with max physics steps per frame,1,open,PabloDevGit
 14042,DarioSamo,,pull_request,2025-12-22 13:04:53+00:00,114281,Fix real time reflection probes being constantly recreated.,1,closed,DarioSamo
 14043,Fryker,,issue,2025-12-22 12:18:03+00:00,114280,Godot stops working when opening context menu,4,open,Fryker
 14044,clayjohn,,pull_request,2025-12-22 06:36:37+00:00,114279,Avoid singularity during sky filtering,9,closed,clayjohn
@@ -13623,7 +13546,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14084,kleonc,,issue,2025-12-20 11:49:22+00:00,114235,`TileMapLayer` editor plugin's no-`TileSet` hint is misplaced,1,closed,kleonc
 14085,passivestar,,pull_request,2025-12-20 11:25:47+00:00,114234,Improve editor inspector main container spacing in modern theme,1,closed,passivestar
 14086,Kaleb-Reid,,pull_request,2025-12-20 10:45:50+00:00,114233,"Fix builds on FreeBSD, OpenBSD, and NetBSD",4,open,Kaleb-Reid
-14087,PabloDevGit,,issue,2025-12-20 09:08:07+00:00,114232,Renaming TileMapLayer node requires three clicks,3,closed,PabloDevGit
 14088,passivestar,,pull_request,2025-12-20 09:02:39+00:00,114231,Fix tree line editor corners,4,closed,passivestar
 14089,StrangePanda0,,issue,2025-12-20 08:24:39+00:00,114230,[Android] Can't minimize the main screen panel when bottom panels is expanded.,4,closed,StrangePanda0
 14090,sreich,,issue,2025-12-20 06:15:03+00:00,114229,"Linux ALSA, Pipewire, no MIDI devices connected OS.get_connected_midi_inputs",0,open,sreich
@@ -13844,7 +13766,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14306,EviTRea,,issue,2025-12-14 11:58:37+00:00,114013,"XRCamera3D clipping distance (near/far) property gets overriden by ""current"" Camera3D",8,closed,EviTRea
 14307,petzki,,issue,2025-12-14 10:47:05+00:00,114012,"OptionButton ItemSelected and ItemFocused use 'long' as index, while other methods use 'int'",1,closed,petzki
 14308,eobet,,issue,2025-12-14 09:51:52+00:00,114011,Visual Shader parameter default value takes too much space,0,open,eobet
-14309,PabloDevGit,,issue,2025-12-14 09:34:09+00:00,114010,Godot does not update uniform texture thumbnail,6,closed,PabloDevGit
 14310,eobet,,issue,2025-12-14 09:11:04+00:00,114009,Visual Shader Remap node broken with display scaling,0,open,eobet
 14311,Jordyfel,,issue,2025-12-14 08:29:02+00:00,114008,Importing a glb file with animations creates a huge .import file,4,closed,Jordyfel
 14312,SyntronicZero,,issue,2025-12-14 06:13:51+00:00,114007,Area3D space override Combine-Replace not functioning as Described,2,open,SyntronicZero
@@ -13953,7 +13874,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14415,Xlebncat,,issue,2025-12-11 16:15:25+00:00,113901,Label3D with Autowrap Word does not wrap Chinese/Japanese text in exported builds (works only in editor),3,closed,Xlebncat
 14416,pixel-boy,,issue,2025-12-11 15:42:35+00:00,113900,ItemLists using fonts with distance_field active modifies the display of StyleBoxTextures,4,closed,pixel-boy
 14417,CubeOfCheese,,issue,2025-12-11 15:39:39+00:00,113899,"MacOS window embedding, game window goes behind editor window",9,open,CubeOfCheese
-14418,PabloDevGit,,issue,2025-12-11 15:32:06+00:00,113898,Godot shows a blue rectangle over TileMap,2,closed,PabloDevGit
 14419,allenwp,,pull_request,2025-12-11 15:30:02+00:00,113897,Fix incorrect sky luminance multiplier for Mobile HDR 2D.,2,closed,allenwp
 14420,KoBeWi,,pull_request,2025-12-11 15:12:02+00:00,113896,Improve EditorDock shortcut property,1,closed,KoBeWi
 14421,migueldeicaza,,pull_request,2025-12-11 15:10:57+00:00,113895,Node3DEditorViewport: Prevent crash while handling input.  ,1,closed,migueldeicaza
@@ -13966,7 +13886,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14428,lodetrick,,pull_request,2025-12-11 12:34:56+00:00,113888,Update EditorDock shortcut documentation,1,closed,lodetrick
 14429,Giganzo,,pull_request,2025-12-11 12:08:19+00:00,113887,Fix visible empty panel in scene dock,2,closed,Giganzo
 14430,deralmas,,pull_request,2025-12-11 10:35:15+00:00,113886,Wayland: Implement touch support,9,closed,deralmas
-14431,PabloDevGit,,issue,2025-12-11 10:31:01+00:00,113885,Godot does not save the margins of the TileMap and TileSet docks in the layout.,5,open,PabloDevGit
 14432,arkology,,issue,2025-12-11 09:20:52+00:00,113884,Visible empty panel in Scene dock,0,closed,arkology
 14433,bruvzg,,pull_request,2025-12-11 09:12:33+00:00,113883,Skip over non-CanvasItem parents when selecting texture filter properties.,4,closed,bruvzg
 14434,Jordyfel,,issue,2025-12-11 07:26:28+00:00,113882,Font advanced import dialog looks off in the modern theme,2,closed,Jordyfel
@@ -14057,7 +13976,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14520,sockeye-d,,pull_request,2025-12-09 10:33:25+00:00,113796,Add a panel background to CreateDialog's Tree in the modern theme,2,closed,sockeye-d
 14521,bruvzg,,pull_request,2025-12-09 09:51:57+00:00,113794,Unset submenu index when popup menu is hidden.,1,closed,bruvzg
 14522,Tekisasu-JohnK,,issue,2025-12-09 09:08:33+00:00,113793,Collapse Main Menu leads to repro crash,1,closed,Tekisasu-JohnK
-14523,PabloDevGit,,issue,2025-12-09 08:56:51+00:00,113792,Godot does not respect the dock sizes,2,closed,PabloDevGit
 14524,cpl-s-matsuyama,,pull_request,2025-12-09 08:35:06+00:00,113791,GDScript: Fix get_dependencies by deferring resolution,3,closed,cpl-s-matsuyama
 14525,sockeye-d,,pull_request,2025-12-09 06:48:31+00:00,113790,Propagate errors from `EditorFileSystem::_copy_file` through `EditorFileSystem::copy_file`,6,closed,sockeye-d
 14526,Rindbee,,pull_request,2025-12-09 05:03:39+00:00,113789,Use `ObjectID` in `SceneTreeEditor` to compare the old and new scene roots,1,closed,Rindbee
@@ -14080,7 +13998,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14543,LilithSilver,,pull_request,2025-12-08 20:36:36+00:00,113772,Add `ScriptEditor::close_file()`,5,closed,LilithSilver
 14544,HasanBaranK,,issue,2025-12-08 20:36:33+00:00,113771,Populate Multimesh Crashes Godot when you click on selecting TargetSurface,1,open,HasanBaranK
 14545,FyiurAmron,,pull_request,2025-12-08 19:42:35+00:00,113770,Improve `Normalize()` and docs,0,closed,FyiurAmron
-14546,PabloDevGit,,issue,2025-12-08 19:37:56+00:00,113769,Godot does not return the cell state,1,closed,PabloDevGit
 14547,TheDying0fLight,,pull_request,2025-12-08 19:31:47+00:00,113768,Debugger show error timestamp in tooltip,0,open,TheDying0fLight
 14548,LilithSilver,,pull_request,2025-12-08 19:26:21+00:00,113767,Add `EditorInterface::get_unsaved_scenes()`,3,closed,LilithSilver
 14549,LilithSilver,,pull_request,2025-12-08 19:10:51+00:00,113765,Expose `ScriptEditor::save_all_scripts()`,1,closed,LilithSilver
@@ -14173,9 +14090,7 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14636,CasualGarageCoder,,issue,2025-12-06 09:52:17+00:00,113675,Regression on Vulkan support for OpImageQueryLod,4,closed,CasualGarageCoder
 14637,grusad,,issue,2025-12-06 09:50:01+00:00,113674,Crash reports from Google Play Console,1,closed,grusad
 14638,zhehangd,,issue,2025-12-06 09:26:30+00:00,113673,Compositor effect not called every frame,7,open,zhehangd
-14639,PabloDevGit,,issue,2025-12-06 09:24:44+00:00,113672,Godot disconnects signal when the node is turned into a scene,5,open,PabloDevGit
 14640,giokhmaladze,,issue,2025-12-06 09:23:02+00:00,113671,Editor tree entry editing style,4,closed,giokhmaladze
-14641,PabloDevGit,,issue,2025-12-06 09:02:54+00:00,113670,Godot scrolls automatically for no reason,4,closed,PabloDevGit
 14642,giokhmaladze,,issue,2025-12-06 08:24:51+00:00,113669,Focus highlight still apperaring on scene tree widget,3,closed,giokhmaladze
 14643,giokhmaladze,,issue,2025-12-06 08:07:51+00:00,113668,[Wayland] Scene tree/FileSystem node renaming issues,5,closed,giokhmaladze
 14644,aoisensi,,pull_request,2025-12-06 07:48:04+00:00,113667,Notify changes on calling `ArrayMesh.clear_surfaces()`,1,open,aoisensi
@@ -14269,7 +14184,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14732,lodetrick,,pull_request,2025-12-04 18:43:35+00:00,113579,Fix transient docks not saving floating positions,2,open,lodetrick
 14733,syntaxerror247,,pull_request,2025-12-04 17:49:16+00:00,113578,Reduce export dialog minimum size,1,closed,syntaxerror247
 14734,AThousandShips,,issue,2025-12-04 17:39:10+00:00,113577,[GDScript] Error when exporting with binary tokens,12,closed,AThousandShips
-14735,PabloDevGit,,issue,2025-12-04 17:11:59+00:00,113576,Autocompletion works incorrectly,8,closed,PabloDevGit
 14736,bruvzg,,pull_request,2025-12-04 17:10:15+00:00,113575,[Unix] Remove leading `..` from absolute paths and apply `simplify_path` to Unix current directory path.,3,closed,bruvzg
 14737,YeldhamDev,,pull_request,2025-12-04 17:07:00+00:00,113574,Enable scroll hints for several parts of the editor,5,closed,YeldhamDev
 14738,MattiaZir,,pull_request,2025-12-04 16:10:15+00:00,113573,Fix memory management for ColorPalette in save file dialog,3,closed,MattiaZir
@@ -14341,7 +14255,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14805,blueskythlikesclouds,,pull_request,2025-12-03 12:53:52+00:00,113504,Parallelize positional light culling.,2,open,blueskythlikesclouds
 14806,YeldhamDev,,pull_request,2025-12-03 12:06:42+00:00,113503,Fix `ScrollContainer` ignoring internal nodes added externally,1,closed,YeldhamDev
 14807,prvak,,issue,2025-12-03 12:00:15+00:00,113502,History navigation is broken after navigating forward,1,closed,prvak
-14808,PabloDevGit,,issue,2025-12-03 11:35:49+00:00,113501,Process time increases for no reason,18,open,PabloDevGit
 14809,mihe,,pull_request,2025-12-03 11:34:53+00:00,113500,Fix truncation of node name in bezier animation editor,1,closed,mihe
 14810,mihe,,issue,2025-12-03 11:34:24+00:00,113499,Bezier animation editor doesn't truncate node names anymore,0,closed,mihe
 14811,smix8,,issue,2025-12-03 11:31:47+00:00,113498,"Can not create node class from ""Create New Node"" dialog when search filter only keyword matches",5,closed,smix8
@@ -14354,7 +14267,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 14818,vaartis,,issue,2025-12-03 09:42:47+00:00,113491,EditorTranslationParserPlugin messages ignore order of msgids,6,closed,vaartis
 14819,timothyqiu,,issue,2025-12-03 09:41:53+00:00,113490,Error spam when selecting/deselecting a FileDialog node,3,closed,timothyqiu
 14820,bruvzg,,pull_request,2025-12-03 09:26:43+00:00,113489,Split GDExtension validations files to avoid constant git conflicts.,7,closed,bruvzg
-14821,PabloDevGit,,issue,2025-12-03 09:13:06+00:00,113488,Search in Files not working,1,closed,PabloDevGit
 14822,timothyqiu,,issue,2025-12-03 08:40:33+00:00,113487,Error when selecting project to import,0,closed,timothyqiu
 14823,ttencate,,pull_request,2025-12-03 08:18:06+00:00,113486,Use AABB center instead of origin for visibility fade,3,closed,ttencate
 14824,arkology,,issue,2025-12-03 06:38:26+00:00,113485,"[4.6dev5] Switching bottom panel docks visibility is done by pressing, not releasing (compared to 4.5 stable)",0,closed,arkology
@@ -14638,7 +14550,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 15104,Ivorforce,,pull_request,2025-11-26 19:34:13+00:00,113204,"Make `NodePath` copy-on-write, to avoid it changing accidentally (through copies)",5,closed,Ivorforce
 15105,aaronfranke,,pull_request,2025-11-26 19:27:33+00:00,113203,MultiMesh: Allow getting 3D transforms regardless of internal format,2,open,aaronfranke
 15106,aaronfranke,,pull_request,2025-11-26 19:18:03+00:00,113202,Allow converting from Mesh to ImporterMesh,3,closed,aaronfranke
-15107,PabloDevGit,,issue,2025-11-26 18:06:24+00:00,113201,Editor freezes when stopping the project from full screen editor,2,open,PabloDevGit
 15108,HEX-23,,pull_request,2025-11-26 17:22:18+00:00,113200,Add post-light function in spatial shaders for all renderers (useful in toon shading),21,open,HEX-23
 15109,KoBeWi,,pull_request,2025-11-26 17:09:12+00:00,113199,Replace DockSlot with DockTabContainer,5,closed,KoBeWi
 15110,Withaust,,pull_request,2025-11-26 16:58:59+00:00,113198,Expose 'Resource::set_resource_id_for_path',3,closed,Withaust
@@ -15213,7 +15124,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 15681,BrotherShort,,pull_request,2025-11-10 22:51:39+00:00,112625,Fix tree vertical line width bug,1,closed,BrotherShort
 15682,GabCoolDude,,pull_request,2025-11-10 21:34:17+00:00,112624,Add `@display_if` annotation to GDScript,8,closed,GabCoolDude
 15683,jrouwe,,pull_request,2025-11-10 21:10:30+00:00,112623,Jolt Physics: Remove sharing shared soft body settings from SoftBody3D,3,closed,jrouwe
-15684,PabloDevGit,,issue,2025-11-10 20:57:05+00:00,112622,Godot incorrectly detects foldable code,1,open,PabloDevGit
 15685,Giganzo,,pull_request,2025-11-10 20:51:45+00:00,112621,Change prev/next button theme variation to FlatButton for FileSystem and Inspector dock,4,closed,Giganzo
 15686,Koyper,,issue,2025-11-10 20:51:43+00:00,112620,[PopupMenu] menu position and menu mouse position return values change when per_pixel_transparency is allowed,2,closed,Koyper
 15687,Giganzo,,issue,2025-11-10 20:51:37+00:00,112619,FileSystem Current path and Filter LineEdit have different heights in Modern theme,0,closed,Giganzo
@@ -15227,7 +15137,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 15695,arkology,,issue,2025-11-10 17:57:14+00:00,112611,Bottom panel theming is broken,3,closed,arkology
 15696,lainillusion,,issue,2025-11-10 17:49:55+00:00,112610,RichTextLabel Horizontal Alignment is misaligned in 4.6 dev 3,2,closed,lainillusion
 15697,MarianoGnu,,issue,2025-11-10 14:53:03+00:00,112609,GdScript editor: % symbol has the wrong highlight color when is the first character of a line,1,open,MarianoGnu
-15698,PabloDevGit,,issue,2025-11-10 14:06:49+00:00,112608,Godot doesn’t bring detached windows/docks to the front,9,closed,PabloDevGit
 15699,KoBeWi,,pull_request,2025-11-10 12:28:08+00:00,112607,Add MeshInstance3D upgrade code,6,closed,KoBeWi
 15700,slime3000fly,,issue,2025-11-10 12:27:54+00:00,112606,"Project created on Windows 4.2 won’t open in Godot 4.2–4.5.1 on Linux (editor fails, game runs)",2,open,slime3000fly
 15701,akien-mga,,pull_request,2025-11-10 09:53:03+00:00,112605,"Revert ""Remove default skeleton path in MeshInstance3D""",1,closed,akien-mga
@@ -15353,7 +15262,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 15821,EliasHoehne,,issue,2025-11-06 22:00:47+00:00,112485,"GLB import: ""Bug: Dictionary::operator[] used when there was no value for the given key, please report.""",0,closed,EliasHoehne
 15822,adamscott,,pull_request,2025-11-06 20:05:41+00:00,112484,[GDScript] Add language isolation to tests,1,open,adamscott
 15823,jrouwe,,pull_request,2025-11-06 19:52:01+00:00,112483,Fix `SoftBody3D`'s position influences its physics in Jolt,8,closed,jrouwe
-15824,PabloDevGit,,issue,2025-11-06 19:23:12+00:00,112482,Residual information when using .new(),3,closed,PabloDevGit
 15825,stuartcarnie,,pull_request,2025-11-06 18:50:36+00:00,112481,Massively optimize canvas 2D rendering by using vertex buffers,8,closed,stuartcarnie
 15826,valeriumdev,,issue,2025-11-06 18:45:06+00:00,112480,Crash on close project when AudioStreamInteractive is extended from GDScript and sound is still playing,3,open,valeriumdev
 15827,kburchfiel,,issue,2025-11-06 18:11:02+00:00,112479,Godot 4.5 crashes with 'Node not found' error when attempting to add a GDExtension class to Godot project,1,closed,kburchfiel
@@ -15525,7 +15433,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 15993,passivestar,,pull_request,2025-11-02 10:13:08+00:00,112313,Improve visibility of separators in modern theme,3,closed,passivestar
 15994,DexterFstone,,issue,2025-11-02 10:08:04+00:00,112312,`JSON.from_native` for inner class,4,closed,DexterFstone
 15995,Chaosus,,issue,2025-11-02 09:49:29+00:00,112311,On Modern Solarized (Light) theme the GraphEdit's is overbrighted,0,closed,Chaosus
-15996,PabloDevGit,,issue,2025-11-02 09:41:52+00:00,112309,"[3.x] Godot crashes when the ""Manage Export Templates"" option is clicked.",3,closed,PabloDevGit
 15997,timothyqiu,,pull_request,2025-11-02 09:19:41+00:00,112310,Allow explicit values for `StringName` enum properties,4,closed,timothyqiu
 15998,Ryan-000,,pull_request,2025-11-02 07:03:55+00:00,112308,Optimize animation performance and improve internals,17,closed,Ryan-000
 15999,AdvanceControl,,pull_request,2025-11-02 06:04:51+00:00,112307,Add warning when node name is invalid (reverted),9,closed,AdvanceControl
@@ -16555,7 +16462,6 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 17032,HolonProduction,,pull_request,2025-10-04 21:44:35+00:00,111266,Autocompletion: Filter ClassDB argument options,1,closed,HolonProduction
 17033,ashelleyPurdue,,issue,2025-10-04 21:07:01+00:00,111265,[4.5] .blend files created in Blender 3.4 completely fail to import,2,open,ashelleyPurdue
 17034,tmilker,,pull_request,2025-10-04 21:05:52+00:00,111264,Expose ScriptEditor::is_editor_floating() to GDScript,6,closed,tmilker
-17035,PabloDevGit,,issue,2025-10-04 19:48:52+00:00,111263,"""Auto Expand to Selected Node"" option does nothing",0,closed,PabloDevGit
 17036,leandro-benedet-garcia,,pull_request,2025-10-04 18:59:11+00:00,111262,Separate Property and Method Info from Object files,1,closed,leandro-benedet-garcia
 17037,passivestar,,issue,2025-10-04 18:40:28+00:00,111261,Net socket unix error spam,7,closed,passivestar
 17038,devloglogan,,pull_request,2025-10-04 18:34:34+00:00,111260,Add null check when getting motion vector fbo,1,closed,devloglogan
@@ -16794,7 +16700,7 @@ Unnamed: 0,user,email,activity_type,date,identifier,title,comments,state,canonic
 17273,mh114,,issue,2025-09-29 04:09:19+00:00,111020,`TileMapLayer` does not support instanced shader uniforms,3,open,mh114
 17274,WhalesState,,issue,2025-09-29 02:56:45+00:00,111019,Change StyleBox content margins type from float to integer.,2,open,WhalesState
 17275,Zylann,,pull_request,2025-09-29 00:03:44+00:00,111018,Fix unreachable code warning in double-precision builds,2,closed,Zylann
-17276,jasonweiler,,pull_request,2025-09-28 23:10:01+00:00,111017,"Editor: Add splitter to ""Create New Node"" dialog",8,closed,jasonweiler
+17276,jasonweiler,,pull_request,2025-09-28 23:10:01+00:00,111017,"Editor: Add splitter to ""Create New Node"" dialog",8,closed,Jason Weiler
 17277,almic,,pull_request,2025-09-28 22:52:52+00:00,111016,Remove dead code in `node_3d_editor_gizmos.cpp`,2,closed,almic
 17278,Alexofp,,pull_request,2025-09-28 22:14:45+00:00,111015,Scons option to enable CVTT and Betsy compression in export templates,8,closed,Alexofp
 17279,bruvzg,,pull_request,2025-09-28 21:54:31+00:00,111014,[TextServer] Enforce zero width spaces and joiners to actually be zero width and not fallback to regular space.,2,closed,bruvzg

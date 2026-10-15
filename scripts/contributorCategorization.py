@@ -1,8 +1,20 @@
+import re
 import pandas as pd
 from datetime import datetime, timezone
+from pathlib import Path
 
-# Load Data
-df = pd.read_csv(r"outputs\godot_individual_activity_filtered.csv", parse_dates=['date'])
+# ==========================================
+# 0. CONFIGURATION & DATA LOADING
+# ==========================================
+# Resolve outputs directory whether run from repo root or scripts directory
+if Path("outputs").is_dir():
+    OUTPUTS_DIR = Path("outputs")
+elif (Path(__file__).resolve().parent.parent / "outputs").is_dir():
+    OUTPUTS_DIR = Path(__file__).resolve().parent.parent / "outputs"
+else:
+    OUTPUTS_DIR = Path("outputs")
+
+df = pd.read_csv(OUTPUTS_DIR / "godot_individual_activity_filtered.csv", parse_dates=['date'])
 df['date'] = pd.to_datetime(df['date'], utc=True)
 
 START_DATE = datetime(2025, 9, 23, tzinfo=timezone.utc)
@@ -10,15 +22,131 @@ END_DATE = datetime(2026, 9, 23, tzinfo=timezone.utc)
 SIX_MONTHS_AGO = datetime(2026, 3, 23, tzinfo=timezone.utc)
 THREE_MONTHS_AGO = datetime(2026, 6, 23, tzinfo=timezone.utc)
 
-# Use results form botDetection to remove bots and manual analysis from analysis
-def is_bot(user_str):
+# ==========================================
+# 1. BOT DETECTION & FILTERING
+# ==========================================
+# Measure 1: Name Matching
+def check_name_bot(user_str):
     user_lower = str(user_str).lower()
-    return '[bot]' in user_lower or user_lower == 'ghost' 
+    if '[bot]' in user_lower:
+        return "Measure 1: Username contains '[bot]'"
+    elif user_lower in ['godot-engine-bot', 'dependabot']:
+        return f"Measure 1: Known bot account '{user_str}'"
+    return None
 
-# Separate bots from humans
-df_bot = df[df['user'].apply(is_bot)].copy()
-df_filtered = df[~df['user'].apply(is_bot)].copy()
+# Measure 2: PR and Issues vs Commits (Behavioral volume)
+def check_activity_count(activity_df):
+    activity_pivot = activity_df.groupby(['user', 'activity_type']).size().unstack(fill_value=0)
+    for col in ['commit', 'pull_request', 'issue']:
+        if col not in activity_pivot.columns:
+            activity_pivot[col] = 0
+            
+    activity_pivot['automated_actions'] = activity_pivot['pull_request'] + activity_pivot['issue']
 
+    # Threshold: >50 PRs/Issues and exactly 0 commits
+    behavioral_bots = activity_pivot[
+        (activity_pivot['automated_actions'] > 50) & 
+        (activity_pivot['commit'] == 0)
+    ].index.tolist()
+
+    return behavioral_bots, activity_pivot
+
+# Measure 3: Check frequencies of the same activity (Speed)
+def check_frequencies(activity_df):
+    # Sort locally to avoid modifying original ordering
+    df_sorted = activity_df.sort_values(by=['user', 'date']).copy()
+
+    # Calculate time difference between consecutive actions
+    df_sorted['time_since_last_action'] = df_sorted.groupby('user')['date'].diff().dt.total_seconds()
+
+    # Define fast action threshold (bursts)
+    FAST_ACTION_THRESHOLD_SECONDS = 3
+    df_sorted['is_fast_action'] = df_sorted['time_since_last_action'] < FAST_ACTION_THRESHOLD_SECONDS
+
+    # Count fast actions per user
+    speed_stats = df_sorted.groupby('user').agg(
+        total_actions=('date', 'count'),
+        fast_actions=('is_fast_action', 'sum')
+    ).reset_index()
+
+    # Flag users with > 15 incredibly fast actions
+    speed_bots = speed_stats[speed_stats['fast_actions'] > 15]['user'].tolist()
+
+    return speed_bots, speed_stats, FAST_ACTION_THRESHOLD_SECONDS
+
+speed_bots, speed_stats, FAST_ACTION_THRESHOLD_SECONDS = check_frequencies(df)
+behavioral_bots, activity_pivot = check_activity_count(df)
+
+def get_bot_reason(user_str):
+    # Check Measure 1 (Name)
+    name_reason = check_name_bot(user_str)
+    if name_reason:
+        return name_reason
+    
+    # Check Measure 2 (Volume vs Commits)
+    if user_str in behavioral_bots:
+        pull_requests = activity_pivot.loc[user_str, 'pull_request']
+        issues = activity_pivot.loc[user_str, 'issue']
+        return f"Measure 2: Behavioral (0 commits, {pull_requests} automated PRs, {issues} Issues)"
+
+    # Check Measure 3 (Activity Speed)
+    if user_str in speed_bots:
+        fast_count = speed_stats.loc[speed_stats['user'] == user_str, 'fast_actions'].values[0]
+        return f"Measure 3: Activity Speed ({fast_count} actions under {FAST_ACTION_THRESHOLD_SECONDS}s)"
+        
+    return None
+
+# Tag and filter out bots
+df['bot_reason'] = df['user'].apply(get_bot_reason)
+df_bot = df[df['bot_reason'].notnull()].copy()
+df_filtered = df[df['bot_reason'].isnull()].copy().drop(columns=['bot_reason'])
+
+print("=== IDENTIFIED BOTS & REASONS ===")
+bot_summary = df_bot[['user', 'bot_reason']].drop_duplicates().sort_values(by='bot_reason')
+for _, row in bot_summary.iterrows():
+    print(f"User: {row['user'].ljust(20)} | {row['bot_reason']}")
+print(f"Total bot actions removed: {len(df_bot)} across {df_bot['user'].nunique()} bot accounts.\n")
+
+# ==========================================
+# 2. MULTIPLE ACCOUNT DETECTION (Identity Aliasing)
+# ==========================================
+# Measure 1: Exact Email Matching
+email_to_primary_user = df_filtered.dropna(subset=['email']).groupby('email')['user'].first().to_dict()
+user_to_primary_user = (
+    df_filtered.dropna(subset=['email'])
+    .set_index('user')['email']
+    .map(email_to_primary_user)
+    .to_dict()
+)
+df_filtered['canonical_user'] = (
+    df_filtered['user'].map(user_to_primary_user)
+    .fillna(df_filtered['email'].map(email_to_primary_user))
+    .fillna(df_filtered['user'])
+)
+
+# Measure 2: Username String Normalization
+def normalize_username(name):
+    # Strip all non-alphanumeric characters and convert to lowercase
+    return re.sub(r'[^a-zA-Z0-9]', '', str(name)).lower()
+
+df_filtered['simplified_name'] = df_filtered['canonical_user'].apply(normalize_username)
+simplified_to_canonical = df_filtered.groupby('simplified_name')['canonical_user'].first().to_dict()
+df_filtered['canonical_user'] = df_filtered['simplified_name'].map(simplified_to_canonical)
+df_filtered = df_filtered.drop(columns=['simplified_name'])
+
+merged_accounts = df_filtered.groupby('canonical_user')['user'].unique()
+aliased_users = merged_accounts[merged_accounts.apply(len) > 1]
+
+print("=== MULTIPLE ACCOUNT DETECTION SUMMARY ===")
+print("Account normalization complete.")
+print(f"Found {len(aliased_users)} developers using multiple accounts.\n")
+print("=== EXAMPLES OF MERGED ACCOUNTS ===")
+for canonical, originals in aliased_users.items():
+    print(f"Canonical User: '{canonical}' is used by accounts: {list(originals)}")
+
+# ==========================================
+# 3. CONTRIBUTOR ANALYSIS & CATEGORIZATION
+# ==========================================
 user_stats = df_filtered.groupby('canonical_user').agg(
     total_activities=('activity_type', 'count'),
     first_activity=('date', 'min'),
@@ -46,8 +174,7 @@ all_activity_count_stats = pd.DataFrame([
 ])
 
 def frequent_threshold_determinator(user):
-
-    # only select contributors with more actvities than the mean
+    # only select contributors with more activities than the mean
     user['total_activities'] = user['total_activities']
     min_5_activity_df = user[user['total_activities'] > int(all_activity_count_stats['mean'].iloc[0])]
 
@@ -59,16 +186,15 @@ def frequent_threshold_determinator(user):
     
     # compute 90th percentile of number of activities among all these users
     threshold = min_5_activity_df['total_activities'].quantile(0.90)
-    # print(min_5_activity_df['total_activities'].quantile(0.99))
     
     return threshold, stats_df
 
 # Unpack the threshold and the dataframe for the > Mean contributors
 frequent_threshold_raw, above_mean_stats_df = frequent_threshold_determinator(user_stats)
 frequent_threshold = round(frequent_threshold_raw)
-print("frequent_threshold:", frequent_threshold)
+print(f"\nfrequent_threshold: {frequent_threshold}")
 mean_threshold = round(all_activity_count_stats['mean'].iloc[0])
-print("mean_threshold:", mean_threshold)
+print(f"mean_threshold: {mean_threshold}")
 
 def categorize_contributor(row):
     # 1. High-impact or consistent contributors
@@ -94,7 +220,7 @@ user_stats['category'] = user_stats.apply(categorize_contributor, axis=1)
 
 
 # ==========================================
-# 5. STATISTICS & OUTPUT
+# 4. STATISTICS & OUTPUT
 # ==========================================
 
 # Standardize column order for all tables
@@ -113,18 +239,18 @@ all_activity_count_stats = all_activity_count_stats[cols]
 above_mean_stats_df = above_mean_stats_df[cols]
 group_count_stats = group_count_stats[cols]
 
-
 print("\n=== CONTRIBUTOR HEALTH SUMMARY ===")
 print(user_stats['category'].value_counts().to_string())
 
+print("\n=== OVERALL & >MEAN ACTIVITY STATS ===")
 print(all_activity_count_stats.to_string(index=False, float_format=lambda x: f"{x:.2f}"))
-
 print(above_mean_stats_df.to_string(index=False, float_format=lambda x: f"{x:.2f}"))
 
 print("\n=== ACTIVITIES PER USER (one count per canonical contributor) ===")
 print(group_count_stats.to_string(index=False, float_format=lambda value: f"{value:.2f}"))
 
 # Export
-user_stats.to_csv(r"outputs\user_stats.csv", index=False)
-group_count_stats.to_csv(r"outputs\activity_count_statistics.csv", index=False)
-df_filtered.to_csv(r"outputs\bot_activity_filtered.csv", index=False)
+user_stats.to_csv(OUTPUTS_DIR / "user_stats.csv", index=False)
+group_count_stats.to_csv(OUTPUTS_DIR / "activity_count_statistics.csv", index=False)
+df_filtered.to_csv(OUTPUTS_DIR / "bot_activity_filtered.csv", index=False)
+print("\nExported successfully to outputs/")
