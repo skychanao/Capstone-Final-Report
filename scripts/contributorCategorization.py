@@ -252,5 +252,5 @@ print(group_count_stats.to_string(index=False, float_format=lambda value: f"{val
 # Export
 user_stats.to_csv(OUTPUTS_DIR / "user_stats.csv", index=False)
 group_count_stats.to_csv(OUTPUTS_DIR / "activity_count_statistics.csv", index=False)
-df_filtered.to_csv(OUTPUTS_DIR / "bot_activity_filtered.csv", index=False)
+df_filtered.to_csv(OUTPUTS_DIR / "activity_filtered.csv", index=False)
 print("\nExported successfully to outputs/")

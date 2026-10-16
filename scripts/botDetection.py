@@ -3,9 +3,7 @@ import pandas as pd
 # Load activity data
 df = pd.read_csv(r"outputs\godot_individual_activity_filtered.csv", parse_dates=['date'])
 
-# ==========================================
-# Measure 1: Name Matching
-# ==========================================
+# 1. Name Matching
 def check_name_bot(user_str):
     user_lower = str(user_str).lower()
     if '[bot]' in user_lower:
@@ -14,9 +12,7 @@ def check_name_bot(user_str):
         return f"Measure 1: Known bot account '{user_str}'"
     return None
 
-# ==========================================
-# Measure 2: PR and Issues vs Commits
-# ==========================================
+# 2. PR and Issues vs Commits
 def check_activity_count():
     activity_pivot = df.groupby(['user', 'activity_type']).size().unstack(fill_value=0)
     for col in ['commit', 'pull_request', 'issue']:
@@ -33,9 +29,7 @@ def check_activity_count():
 
     return behavioral_bots, activity_pivot
 
-# ==========================================
-# Measure 3: Check frequencies of the same activity
-# ==========================================
+# 3. Frequencies of activties
 def check_frequencies():
     # Sort locally to not mess up the main dataframe's order
     df_sorted = df.sort_values(by=['user', 'date']).copy()
@@ -58,9 +52,7 @@ def check_frequencies():
 
     return speed_bots, speed_stats, FAST_ACTION_THRESHOLD_SECONDS
 
-# ==========================================
-# EXECUTE FILTERS
-# ==========================================
+# Run filters
 speed_bots, speed_stats, FAST_ACTION_THRESHOLD_SECONDS = check_frequencies()
 behavioral_bots, activity_pivot = check_activity_count()
 

@@ -9,6 +9,7 @@ import pandas as pd
 df = pd.read_csv(r"outputs\godot_individual_activity_filtered.csv", parse_dates=['date'])
 df['date'] = pd.to_datetime(df['date'], utc=True)
 
+
 def is_bot(user_str):
     user_lower = str(user_str).lower()
     return '[bot]' in user_lower or user_lower == 'ghost' 
@@ -17,12 +18,21 @@ def is_bot(user_str):
 df_bot = df[df['user'].apply(is_bot)].copy()
 df_filtered = df[~df['user'].apply(is_bot)].copy()
 
+
+#Output number of users with no email address
+df['has_valid_email'] = df['email'].notna() & (df['email'].astype(str).str.strip() != '')
+user_email_status = df.groupby('user')['has_valid_email'].any()
+
+users_with_email = user_email_status.sum()
+users_without_email = (~user_email_status).sum()
+total_unique_users = df['user'].nunique()
+
+print(f"Total Unique Users: {total_unique_users}")
+print(f"Users WITH an email address: {users_with_email}")
+print(f"Users WITHOUT an email address: {users_without_email}")
+
 # Measure 1: Exact Email Matching
-df_valid = df.dropna(subset=['email', 'user']).copy()
-df_valid = df_valid[~df_valid['email'].str.contains('noreply.github.com')]
-df_invalid = df_filtered['email'].isna()
-print(len(df_valid))
-print(len(df_invalid))
+df_valid = df_filtered.dropna(subset=['email', 'user']).copy()
 
 df_valid['email'] = df_valid['email'].str.strip().str.lower()
 df_valid['user'] = df_valid['user'].str.strip()

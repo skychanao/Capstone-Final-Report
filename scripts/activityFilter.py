@@ -10,7 +10,7 @@ activity_raw_df = pd.read_csv(r"outputs\godot_individual_activity.csv")
 
 activity_raw_df['date'] = pd.to_datetime(activity_raw_df['date'], utc=True)
 
-# 2. Filter the entire dataframe to keep only rows within the date range
+# Filter the entire dataframe to keep only rows within the date range
 activity_filtered_df = activity_raw_df[
     (activity_raw_df['date'] >= START_DATE) & 
     (activity_raw_df['date'] <= END_DATE)
