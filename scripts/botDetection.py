@@ -75,9 +75,7 @@ def get_bot_reason(user_str):
         
     return None
 
-# ==========================================
-# APPLY FILTER AND EXPLAIN
-# ==========================================
+
 # Create explanation column
 df['bot_reason'] = df['user'].apply(get_bot_reason)
 

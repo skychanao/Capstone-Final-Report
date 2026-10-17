@@ -3,9 +3,7 @@ import pandas as pd
 from datetime import datetime, timezone
 from pathlib import Path
 
-# ==========================================
-# 0. CONFIGURATION & DATA LOADING
-# ==========================================
+
 # Resolve outputs directory whether run from repo root or scripts directory
 if Path("outputs").is_dir():
     OUTPUTS_DIR = Path("outputs")
@@ -22,9 +20,7 @@ END_DATE = datetime(2026, 9, 23, tzinfo=timezone.utc)
 SIX_MONTHS_AGO = datetime(2026, 3, 23, tzinfo=timezone.utc)
 THREE_MONTHS_AGO = datetime(2026, 6, 23, tzinfo=timezone.utc)
 
-# ==========================================
-# 1. BOT DETECTION & FILTERING
-# ==========================================
+
 # Measure 1: Name Matching
 def check_name_bot(user_str):
     user_lower = str(user_str).lower()
@@ -107,9 +103,7 @@ for _, row in bot_summary.iterrows():
     print(f"User: {row['user'].ljust(20)} | {row['bot_reason']}")
 print(f"Total bot actions removed: {len(df_bot)} across {df_bot['user'].nunique()} bot accounts.\n")
 
-# ==========================================
-# 2. MULTIPLE ACCOUNT DETECTION (Identity Aliasing)
-# ==========================================
+
 # Measure 1: Exact Email Matching
 email_to_primary_user = df_filtered.dropna(subset=['email']).groupby('email')['user'].first().to_dict()
 user_to_primary_user = (
@@ -144,9 +138,7 @@ print("=== EXAMPLES OF MERGED ACCOUNTS ===")
 for canonical, originals in aliased_users.items():
     print(f"Canonical User: '{canonical}' is used by accounts: {list(originals)}")
 
-# ==========================================
-# 3. CONTRIBUTOR ANALYSIS & CATEGORIZATION
-# ==========================================
+
 user_stats = df_filtered.groupby('canonical_user').agg(
     total_activities=('activity_type', 'count'),
     first_activity=('date', 'min'),
@@ -219,9 +211,6 @@ def categorize_contributor(row):
 user_stats['category'] = user_stats.apply(categorize_contributor, axis=1)
 
 
-# ==========================================
-# 4. STATISTICS & OUTPUT
-# ==========================================
 
 # Standardize column order for all tables
 cols = ['group', 'user_count', 'mean', 'median', 'mode', 'std_dev', 'min', '25th_percentile', '90th_percentile', 'max']

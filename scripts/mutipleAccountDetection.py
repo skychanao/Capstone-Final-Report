@@ -1,10 +1,7 @@
 import re
 import pandas as pd
 
-# ==========================================
-# MULTIPLE ACCOUNT DETECTION (Identity Aliasing)
-# ==========================================
-# We apply two distinct measures to group multiple accounts belonging to the same human.
+
 
 df = pd.read_csv(r"outputs\godot_individual_activity_filtered.csv", parse_dates=['date'])
 df['date'] = pd.to_datetime(df['date'], utc=True)

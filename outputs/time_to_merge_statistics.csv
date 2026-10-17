@@ -1,0 +1,9 @@
+metric,value
+Total Matched PRs,4024.0
+Mean TtM (days),18.98
+Median TtM (days),3.13
+25th Percentile (days),0.87
+75th Percentile (days),15.28
+90th Percentile (days),56.12
+Min TtM (days),0.0
+Max TtM (days),347.0
