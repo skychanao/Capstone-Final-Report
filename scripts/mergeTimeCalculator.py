@@ -4,9 +4,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 
-# ==========================================
-# 0. CONFIGURATION & PATH RESOLUTION
-# ==========================================
+
 if Path("outputs").is_dir():
     OUTPUTS_DIR = Path("outputs")
 elif (Path(__file__).resolve().parent.parent / "outputs").is_dir():
@@ -14,7 +12,7 @@ elif (Path(__file__).resolve().parent.parent / "outputs").is_dir():
 else:
     OUTPUTS_DIR = Path("outputs")
 
-# 1. Load Datasets
+# Load Datasets
 act_file = OUTPUTS_DIR / "activity_filtered.csv"
 if not act_file.exists():
     act_file = OUTPUTS_DIR / "godot_individual_activity_filtered.csv"
@@ -29,7 +27,7 @@ df_activity = pd.read_csv(act_file, parse_dates=['date'])
 print(f"Loading Merge Commits from:  {merge_file}")
 df_merge_commits = pd.read_csv(merge_file, parse_dates=['date'])
 
-"""Extract Data"""
+# Extract Data
 # Separate Pull Requests
 prs = df_activity[df_activity['activity_type'] == 'pull_request'].copy()
 
@@ -60,7 +58,7 @@ merge_commits['pr_number'] = merge_commits['pr_number'].astype(int)
 merge_commits = merge_commits.sort_values(by=['pr_number', 'date']).drop_duplicates(subset=['pr_number'], keep='first')
 
 
-"""JOIN PRs and Merge Commits"""
+# JOIN PRs and Merge Commits
 merged_data = pd.merge(
     prs, 
     merge_commits, 
@@ -75,9 +73,7 @@ merged_data['time_to_merge_days'] = merged_data['time_to_merge_hours'] / 24.0
 # Filter valid positive durations (guard against clock discrepancies)
 valid_ttm = merged_data[merged_data['time_to_merge_days'] >= 0].copy()
 
-# ==========================================
-# 3. STATISTICAL ANALYSIS & BUCKETING
-# ==========================================
+# Statistical Analysis
 count_matched = len(valid_ttm)
 mean_days = valid_ttm['time_to_merge_days'].mean()
 std_days = valid_ttm['time_to_merge_days'].std()
@@ -98,7 +94,7 @@ b_over_90d = (valid_ttm['time_to_merge_days'] >= 90).sum()
 
 
 
-"""Merge Commit contirbutors"""
+# Merge Commit contirbutors
 print("\n" + "-" * 65)
 print("             USERS WHO PERFORMED MERGE COMMITS               ")
 print("-" * 65)
@@ -126,7 +122,7 @@ print(f"Fastest Merge:                           {min_days*24:.2f} hours")
 print(f"Slowest Merge:                           {max_days:.1f} days")
 
 
-# 4. PR Resolution & Time-to-Merge by Contributor Category
+# Combine PR with Merge Commit, compute Time to merge
 user_stats_file = OUTPUTS_DIR / "user_stats.csv"
 if user_stats_file.exists() and 'canonical_user' in prs.columns:
     user_stats = pd.read_csv(user_stats_file)
@@ -194,15 +190,12 @@ if user_stats_file.exists() and 'canonical_user' in prs.columns:
     full_cat_summary.to_csv(output_cat_resolution)
 
 # 5. Users who performed merge commits
-
 print("\n Merge Commits by Committer:")
 for user, count in df_merge_commits['author'].value_counts().items():
     print(f"  {user:<15} {count:>5} merges ({count/len(df_merge_commits)*100:5.1f}%)")
 
 
-# ==========================================
-# 6. EXPORT PROCESSED DATA
-# ==========================================
+
 output_ttm_details = OUTPUTS_DIR / "pr_time_to_merge_details.csv"
 export_cols = [c for c in [
     'pr_number', 'title_pr', 'user_pr', 'canonical_user',

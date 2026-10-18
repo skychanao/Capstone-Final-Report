@@ -4,10 +4,7 @@ from datetime import datetime, timezone
 from tqdm import tqdm
 import time
 
-# ==========================================
-# 0. CONFIGURATION & SETUP
-# ==========================================
-# Replace with your actual GitHub Personal Access Token
+# Setup
 GITHUB_TOKEN = ""
 REPO_NAME = "godotengine/godot"
 
@@ -18,9 +15,7 @@ auth = Auth.Token(GITHUB_TOKEN)
 g = Github(auth=auth)
 repo = g.get_repo(REPO_NAME)
 
-# ==========================================
-# 1. FETCHING DATA FROM GITHUB
-# ==========================================
+# Fetch Data
 def fetch_activities():
     data = []
     

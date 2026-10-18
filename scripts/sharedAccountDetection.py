@@ -3,7 +3,7 @@ import pandas as pd
 # Load the dataset
 df = pd.read_csv(r"outputs\godot_individual_activity_filtered.csv")
 
-"""1. Email based approach"""
+"""Compre emails"""
 
 # Remove rows where email or user is missing
 df_valid = df.dropna(subset=['user', 'email']).copy()
@@ -30,7 +30,7 @@ for user, emails in shared_accounts.items():
         break
 print("\n")
 
-"""2. Name based approach"""
+"""Compare Name"""
 
 
 # Look for usernames containing business/team words
