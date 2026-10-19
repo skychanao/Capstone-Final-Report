@@ -1,0 +1,9 @@
+commit: 9c776068d6ed23acd0c78bfe534272d1d2a3a619
+measured: 2026-10-17 (lizard, cloc, jscpd re-run: 2026-10-19)
+lizard 1.24.1
+cloc 2.10
+gcovr 8.7
+SCons 4.11.1
+gcc (GCC) 16.2.1 20260810
+jscpd 4.3.0
+Python 3.14.8

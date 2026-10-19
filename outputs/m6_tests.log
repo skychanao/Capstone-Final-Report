@@ -1,0 +1,16 @@
+ERROR: Connection to remote host failed!
+   at: connect_to_host (core/io/stream_peer_uds.cpp:82)
+WARNING: Camera::unproject_position() unprojecting points on the focal plane is unreliable.
+     at: unproject_position (scene/3d/camera_3d.cpp:559)
+ERROR: Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.
+   at: draw_texture_rect_region (scene/main/canvas_item.cpp:997)
+ERROR: Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.
+   at: draw_texture_rect (scene/main/canvas_item.cpp:989)
+ERROR: Drawing is only allowed inside this node's `_draw()`, functions connected to its `draw` signal, or when it receives NOTIFICATION_DRAW.
+   at: draw_texture_rect_region (scene/main/canvas_item.cpp:997)
+[doctest] doctest version is "2.4.12"
+[doctest] run with "--help" for options
+===============================================================================
+[doctest] test cases:   1432 |   1432 passed | 0 failed | 3 skipped
+[doctest] assertions: 424349 | 424349 passed | 0 failed |
+[doctest] Status: SUCCESS!

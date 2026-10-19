@@ -1,0 +1,12 @@
+DisplayServer: NOM(virtual)=310, stubs=62 (20.0%)
+subclass,overridden,override_ratio_pct
+platform/linuxbsd/x11/display_server_x11.h,119,38.4
+platform/linuxbsd/wayland/display_server_wayland.h,129,41.6
+platform/windows/display_server_windows.h,156,50.3
+platform/macos/display_server_macos_base.h,54,17.4
+platform/android/display_server_android.h,97,31.3
+platform/web/display_server_web.h,76,24.5
+drivers/apple_embedded/display_server_apple_embedded.h,80,25.8
+tests/display_server_mock.h,10,3.2
+
+Stubbed methods: clipboard_get, clipboard_get_image, clipboard_get_primary, clipboard_set, clipboard_set_primary, create_status_indicator, create_sub_window, cursor_set_custom_image, cursor_set_shape, delete_status_indicator, delete_sub_window, dialog_input_text, dialog_show, embed_process, file_dialog_show, file_dialog_with_options_show, get_focused_process_id, help_set_search_callbacks, ime_get_selection, ime_get_text, keyboard_get_keycode_from_physical, keyboard_get_label_from_physical, keyboard_get_layout_name, mouse_get_button_state, mouse_get_position, mouse_set_mode, mouse_set_mode_override, mouse_set_mode_override_enabled, release_rendering_thread, remove_embedded_process, request_close_embedded_process, screen_set_keep_on, screen_set_orientation, set_icon, set_native_icon, show_window, status_indicator_get_rect, status_indicator_set_callback, status_indicator_set_icon, status_indicator_set_menu, status_indicator_set_tooltip, swap_buffers, tts_get_voices, tts_is_paused, tts_is_speaking, tts_pause, tts_resume, tts_speak, tts_stop, virtual_keyboard_get_height, virtual_keyboard_hide, virtual_keyboard_show, window_get_native_handle, window_get_vsync_mode, window_request_hdr_output, window_set_exclusive, window_set_hdr_output_max_luminance, window_set_hdr_output_reference_luminance, window_set_ime_active, window_set_ime_position, window_set_mouse_passthrough, window_set_vsync_mode

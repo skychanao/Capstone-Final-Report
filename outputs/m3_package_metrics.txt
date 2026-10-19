@@ -1,0 +1,68 @@
+package,Ca,Ce,I
+core,1960,10,0.01
+main,45,7,0.13
+servers,561,266,0.32
+scene,639,486,0.43
+drivers,60,132,0.69
+editor,185,528,0.74
+modules,32,702,0.96
+platform,8,204,0.96
+
+SDP violations (src -> dst where I(dst) > I(src)), files
+core (0.01) -> editor (0.74): 1
+core (0.01) -> main (0.13): 2
+core (0.01) -> modules (0.96): 1
+core (0.01) -> scene (0.43): 3
+core (0.01) -> servers (0.32): 4
+drivers (0.69) -> modules (0.96): 1
+drivers (0.69) -> platform (0.96): 2
+editor (0.74) -> modules (0.96): 13
+main (0.13) -> drivers (0.69): 1
+main (0.13) -> editor (0.74): 1
+main (0.13) -> modules (0.96): 3
+main (0.13) -> platform (0.96): 1
+main (0.13) -> scene (0.43): 2
+main (0.13) -> servers (0.32): 3
+modules (0.96) -> platform (0.96): 5
+scene (0.43) -> editor (0.74): 10
+scene (0.43) -> modules (0.96): 3
+servers (0.32) -> drivers (0.69): 2
+servers (0.32) -> modules (0.96): 5
+servers (0.32) -> scene (0.43): 12
+
+Upward includes against the documented layering, files
+core -> editor: 1
+    core/extension/extension_api_dump.cpp
+core -> scene: 3
+    core/error/error_macros.cpp
+    core/io/resource.cpp
+    core/io/resource_format_binary.cpp
+core -> servers: 4
+    core/config/engine.cpp
+    core/debugger/remote_debugger.cpp
+    core/extension/godot_instance.cpp
+    core/io/resource_loader.cpp
+scene -> editor: 10
+    scene/2d/skeleton_2d.cpp
+    scene/3d/occluder_instance_3d.cpp
+    scene/animation/animation_mixer.cpp
+    scene/gui/control.cpp
+    scene/gui/line_edit.cpp
+    scene/gui/rich_text_label.h
+    scene/property_utils.cpp
+    scene/resources/2d/skeleton/skeleton_modification_2d.cpp
+    scene/resources/2d/skeleton/skeleton_modification_2d_twoboneik.cpp
+    scene/resources/shader.cpp
+servers -> scene: 12
+    servers/audio/audio_bus_layout.cpp
+    servers/audio/audio_driver.cpp
+    servers/audio/audio_server.cpp
+    servers/audio/effects/audio_effect_record.h
+    servers/display/display_server.cpp
+    servers/display/native_menu.cpp
+    servers/movie_writer/movie_writer.cpp
+    servers/navigation_2d/navigation_server_2d.cpp
+    servers/navigation_3d/navigation_server_3d.cpp
+    servers/navigation_3d/navigation_server_3d.h
+    servers/rendering/shader_preprocessor.h
+    servers/rendering/shader_types.cpp

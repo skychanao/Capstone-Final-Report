@@ -1,0 +1,31 @@
+folder,functions,ccn_mean,ccn_median,ccn_p90,ccn_max,ccn_gt15,ccn_gt15_pct,nloc_gt100
+core,9059,2.88,1,5,222,189,2.09,98
+drivers,2906,3.80,1.0,8,205,135,4.65,84
+editor,10224,4.77,2.0,10,335,569,5.57,327
+main,58,5.16,1.0,12,69,5,8.62,2
+modules,14986,3.46,1.0,7,332,493,3.29,242
+platform,2732,4.54,2.0,9,360,130,4.76,67
+scene,15811,3.38,1,6,425,465,2.94,216
+servers,7766,3.11,1.0,5,526,226,2.91,162
+
+Top 10 functions by CCN
+  526   1613 NLOC  servers/rendering/shader_language.cpp  ShaderLanguage::_parse_expression
+  483   1554 NLOC  servers/rendering/shader_language.cpp  ShaderLanguage::_parse_shader
+  425   1215 NLOC  scene/gui/text_edit.cpp  TextEdit::_notification
+  360   1078 NLOC  platform/windows/display_server_windows.cpp  DisplayServerWindows::WndProc
+  358   1120 NLOC  scene/gui/rich_text_label.cpp  RichTextLabel::append_text
+  335    840 NLOC  editor/scene/3d/node_3d_editor_viewport.cpp  Node3DEditorViewport::_sinput
+  332    595 NLOC  modules/gdscript/editor/gdscript_highlighter.cpp  GDScriptSyntaxHighlighter::_get_line_syntax_highlighting_impl
+  296    941 NLOC  servers/rendering/shader_compiler.cpp  ShaderCompiler::_dump_node_code
+  274    956 NLOC  modules/gdscript/gdscript_compiler.cpp  GDScriptCompiler::_parse_expression
+  259    441 NLOC  servers/rendering/shader_language.cpp  ShaderLanguage::_validate_operator
+
+folder,files,code_loc,files_gt2000,comment_density_pct
+core,418,128660,9,12.1
+drivers,164,60910,8,12.0
+editor,633,243034,24,10.0
+main,8,5470,1,11.6
+modules,972,254812,23,13.8
+platform,264,58992,6,20.8
+scene,686,243206,21,10.2
+servers,366,133368,15,11.2
