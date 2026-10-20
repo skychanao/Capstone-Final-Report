@@ -23,7 +23,7 @@ print(f"test files scanned: {len(test_files)}")
 print("folder,headers,included_by_tests,pct")
 for d in FOLDERS:
     by_sub = defaultdict(lambda: [0, 0])
-    hs = list(walk(d, lambda n: n.endswith(".h")))
+    hs = list(walk(d, lambda n: n.endswith(".h") and ".gen." not in n))
     hit = [h for h in hs if h in tested]
     print(f"{d},{len(hs)},{len(hit)},{100*len(hit)/max(len(hs),1):.1f}")
     for h in hs:

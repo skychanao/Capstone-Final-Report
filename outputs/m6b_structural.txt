@@ -1,7 +1,6 @@
-test files scanned: 205
+test files scanned: 204
 folder,headers,included_by_tests,pct
-core,255,112,43.9
-    core/authors.gen.h,1,0,0.0
+core,244,112,45.9
     core/config,2,2,100.0
     core/core_bind.h,1,0,0.0
     core/core_constants.h,1,1,100.0
@@ -9,26 +8,22 @@ core,255,112,43.9
     core/core_string_names.h,1,0,0.0
     core/crypto,5,3,60.0
     core/debugger,7,0,0.0
-    core/disabled_classes.gen.h,1,0,0.0
     core/doc_data.h,1,0,0.0
-    core/donors.gen.h,1,0,0.0
     core/error,2,1,50.0
-    core/extension,14,0,0.0
+    core/extension,11,0,0.0
     core/input,7,4,57.1
-    core/io,53,26,49.1
-    core/license.gen.h,1,0,0.0
+    core/io,52,26,50.0
     core/math,41,25,61.0
-    core/object,19,10,52.6
+    core/object,18,10,55.6
     core/os,17,5,29.4
-    core/profiling,2,0,0.0
+    core/profiling,1,0,0.0
     core/register_core_types.h,1,0,0.0
     core/string,17,10,58.8
     core/templates,33,16,48.5
     core/typedefs.h,1,0,0.0
     core/variant,23,8,34.8
     core/version.h,1,0,0.0
-    core/version_generated.gen.h,1,0,0.0
-scene,346,94,27.2
+scene,344,94,27.3
     scene/2d,48,11,22.9
     scene/3d,89,13,14.6
     scene/animation,11,2,18.2
@@ -41,8 +36,8 @@ scene,346,94,27.2
     scene/register_scene_types.h,1,0,0.0
     scene/resources,107,31,29.0
     scene/scene_string_names.h,1,0,0.0
-    scene/theme,5,1,20.0
-servers,307,21,6.8
+    scene/theme,3,1,33.3
+servers,207,21,10.1
     servers/audio,30,2,6.7
     servers/camera,2,0,0.0
     servers/debugger,1,0,0.0
@@ -54,16 +49,16 @@ servers,307,21,6.8
     servers/physics_2d,15,3,20.0
     servers/physics_3d,16,3,18.8
     servers/register_server_types.h,1,0,0.0
-    servers/rendering,205,2,1.0
+    servers/rendering,105,2,1.9
     servers/server_wrap_mt_common.h,1,0,0.0
     servers/text,3,1,33.3
     servers/xr,11,0,0.0
-editor,327,8,2.4
+editor,319,7,2.2
     editor/animation,10,0,0.0
     editor/asset_library,2,0,0.0
     editor/audio,4,0,0.0
     editor/debugger,16,0,0.0
-    editor/doc,5,0,0.0
+    editor/doc,3,0,0.0
     editor/docks,11,0,0.0
     editor/editor_data.h,1,0,0.0
     editor/editor_interface.h,1,0,0.0
@@ -86,6 +81,6 @@ editor,327,8,2.4
     editor/script,10,0,0.0
     editor/settings,14,1,7.1
     editor/shader,11,0,0.0
-    editor/themes,10,1,10.0
-    editor/translations,12,0,0.0
+    editor/themes,8,0,0.0
+    editor/translations,8,0,0.0
     editor/version_control,2,0,0.0

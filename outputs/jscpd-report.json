@@ -1,6 +1,6 @@
 {
   "statistics": {
-    "detectionDate": "2026-10-17T18:15:20.244Z",
+    "detectionDate": "2026-10-19T01:12:00.958Z",
     "formats": {
       "cpp": {
         "sources": {
@@ -11152,126 +11152,6 @@
             "newDuplicatedLines": 0,
             "newClones": 0
           },
-          "platform/linuxbsd/x11/dynwrappers/xrender-so_wrap.h": {
-            "lines": 194,
-            "tokens": 2104,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/x11/dynwrappers/xrandr-so_wrap.h": {
-            "lines": 298,
-            "tokens": 2591,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/x11/dynwrappers/xinput2-so_wrap.h": {
-            "lines": 154,
-            "tokens": 1541,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/x11/dynwrappers/xinerama-so_wrap.h": {
-            "lines": 34,
-            "tokens": 198,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/x11/dynwrappers/xext-so_wrap.h": {
-            "lines": 63,
-            "tokens": 574,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/x11/dynwrappers/xcursor-so_wrap.h": {
-            "lines": 254,
-            "tokens": 2016,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/wayland/dynwrappers/wayland-egl-core-so_wrap.h": {
-            "lines": 34,
-            "tokens": 205,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/wayland/dynwrappers/wayland-cursor-so_wrap.h": {
-            "lines": 42,
-            "tokens": 264,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/wayland/dynwrappers/wayland-client-core-so_wrap.h": {
-            "lines": 231,
-            "tokens": 1801,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/wayland/dynwrappers/libdecor-so_wrap.h": {
-            "lines": 182,
-            "tokens": 1490,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
           "platform/windows/export/template_modifier.h": {
             "lines": 236,
             "tokens": 1950,
@@ -13960,18 +13840,6 @@
             "newDuplicatedLines": 0,
             "newClones": 0
           },
-          "platform/linuxbsd/xkbcommon-so_wrap.h": {
-            "lines": 380,
-            "tokens": 3068,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
           "platform/linuxbsd/tts_linux.h": {
             "lines": 94,
             "tokens": 557,
@@ -13993,18 +13861,6 @@
             "duplicatedTokens": 193,
             "percentage": 7.48,
             "percentageTokens": 7.6,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/speechd-so_wrap.h": {
-            "lines": 318,
-            "tokens": 2451,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -14137,30 +13993,6 @@
             "duplicatedTokens": 316,
             "percentage": 16,
             "percentageTokens": 28.62,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/fontconfig-so_wrap.h": {
-            "lines": 838,
-            "tokens": 6550,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/linuxbsd/dbus-so_wrap.h": {
-            "lines": 970,
-            "tokens": 7511,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
             "newDuplicatedLines": 0,
             "newClones": 0
           },
@@ -40422,96 +40254,28 @@
           }
         },
         "total": {
-          "lines": 728179,
-          "tokens": 6025729,
-          "sources": 3368,
+          "lines": 724187,
+          "tokens": 5993365,
+          "sources": 3354,
           "clones": 617,
           "duplicatedLines": 12992,
           "duplicatedTokens": 157864,
-          "percentage": 1.78,
-          "percentageTokens": 2.62,
-          "newDuplicatedLines": 0,
-          "newClones": 0
-        }
-      },
-      "python": {
-        "sources": {
-          "modules/mono/build_scripts/build_assemblies.py": {
-            "lines": 458,
-            "tokens": 3573,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          },
-          "platform/web/serve.py": {
-            "lines": 78,
-            "tokens": 557,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          }
-        },
-        "total": {
-          "lines": 536,
-          "tokens": 4130,
-          "sources": 2,
-          "clones": 0,
-          "duplicatedLines": 0,
-          "duplicatedTokens": 0,
-          "percentage": 0,
-          "percentageTokens": 0,
-          "newDuplicatedLines": 0,
-          "newClones": 0
-        }
-      },
-      "bash": {
-        "sources": {
-          "platform/android/java/gradlew": {
-            "lines": 185,
-            "tokens": 1326,
-            "sources": 1,
-            "clones": 0,
-            "duplicatedLines": 0,
-            "duplicatedTokens": 0,
-            "percentage": 0,
-            "percentageTokens": 0,
-            "newDuplicatedLines": 0,
-            "newClones": 0
-          }
-        },
-        "total": {
-          "lines": 185,
-          "tokens": 1326,
-          "sources": 1,
-          "clones": 0,
-          "duplicatedLines": 0,
-          "duplicatedTokens": 0,
-          "percentage": 0,
-          "percentageTokens": 0,
+          "percentage": 1.79,
+          "percentageTokens": 2.63,
           "newDuplicatedLines": 0,
           "newClones": 0
         }
       }
     },
     "total": {
-      "lines": 728900,
-      "tokens": 6031185,
-      "sources": 3371,
+      "lines": 724187,
+      "tokens": 5993365,
+      "sources": 3354,
       "clones": 617,
       "duplicatedLines": 12992,
       "duplicatedTokens": 157864,
-      "percentage": 1.78,
-      "percentageTokens": 2.62,
+      "percentage": 1.79,
+      "percentageTokens": 2.63,
       "newDuplicatedLines": 0,
       "newClones": 0
     }
