@@ -1,0 +1,21 @@
+25,13,110,1,31,"Timer::_notification@36-66@scene/main/timer.cpp","scene/main/timer.cpp","Timer::_notification","Timer::_notification( int p_what)",36,66
+11,4,59,1,11,"Timer::_process_tick@68-78@scene/main/timer.cpp","scene/main/timer.cpp","Timer::_process_tick","Timer::_process_tick( double p_delta)",68,78
+5,1,26,1,5,"Timer::set_wait_time@80-84@scene/main/timer.cpp","scene/main/timer.cpp","Timer::set_wait_time","Timer::set_wait_time( double p_time)",80,84
+3,1,11,0,3,"Timer::get_wait_time@86-88@scene/main/timer.cpp","scene/main/timer.cpp","Timer::get_wait_time","Timer::get_wait_time() const",86,88
+3,1,13,1,3,"Timer::set_one_shot@90-92@scene/main/timer.cpp","scene/main/timer.cpp","Timer::set_one_shot","Timer::set_one_shot( bool p_one_shot)",90,92
+3,1,11,0,3,"Timer::is_one_shot@94-96@scene/main/timer.cpp","scene/main/timer.cpp","Timer::is_one_shot","Timer::is_one_shot() const",94,96
+3,1,13,1,3,"Timer::set_autostart@98-100@scene/main/timer.cpp","scene/main/timer.cpp","Timer::set_autostart","Timer::set_autostart( bool p_start)",98,100
+3,1,11,0,3,"Timer::has_autostart@102-104@scene/main/timer.cpp","scene/main/timer.cpp","Timer::has_autostart","Timer::has_autostart() const",102,104
+8,2,41,1,9,"Timer::start@106-114@scene/main/timer.cpp","scene/main/timer.cpp","Timer::start","Timer::start( double p_time)",106,114
+5,1,21,0,5,"Timer::stop@116-120@scene/main/timer.cpp","scene/main/timer.cpp","Timer::stop","Timer::stop()",116,120
+7,2,28,1,8,"Timer::set_paused@122-129@scene/main/timer.cpp","scene/main/timer.cpp","Timer::set_paused","Timer::set_paused( bool p_paused)",122,129
+3,1,11,0,3,"Timer::is_paused@131-133@scene/main/timer.cpp","scene/main/timer.cpp","Timer::is_paused","Timer::is_paused() const",131,133
+3,1,13,1,3,"Timer::set_ignore_time_scale@135-137@scene/main/timer.cpp","scene/main/timer.cpp","Timer::set_ignore_time_scale","Timer::set_ignore_time_scale( bool p_ignore)",135,137
+3,1,10,0,3,"Timer::is_ignoring_time_scale@139-141@scene/main/timer.cpp","scene/main/timer.cpp","Timer::is_ignoring_time_scale","Timer::is_ignoring_time_scale()",139,141
+3,1,15,0,3,"Timer::is_stopped@143-145@scene/main/timer.cpp","scene/main/timer.cpp","Timer::is_stopped","Timer::is_stopped() const",143,145
+3,2,17,0,3,"Timer::get_time_left@147-149@scene/main/timer.cpp","scene/main/timer.cpp","Timer::get_time_left","Timer::get_time_left() const",147,149
+20,6,75,1,21,"Timer::set_timer_process_callback@151-171@scene/main/timer.cpp","scene/main/timer.cpp","Timer::set_timer_process_callback","Timer::set_timer_process_callback( TimerProcessCallback p_callback)",151,171
+3,1,11,0,3,"Timer::get_timer_process_callback@173-175@scene/main/timer.cpp","scene/main/timer.cpp","Timer::get_timer_process_callback","Timer::get_timer_process_callback() const",173,175
+11,5,48,2,11,"Timer::_set_process@177-187@scene/main/timer.cpp","scene/main/timer.cpp","Timer::_set_process","Timer::_set_process( bool p_process , bool p_force)",177,187
+7,2,40,0,9,"Timer::get_configuration_warnings@189-197@scene/main/timer.cpp","scene/main/timer.cpp","Timer::get_configuration_warnings","Timer::get_configuration_warnings() const",189,197
+28,1,417,0,39,"Timer::_bind_methods@199-237@scene/main/timer.cpp","scene/main/timer.cpp","Timer::_bind_methods","Timer::_bind_methods()",199,237

@@ -1,0 +1,121 @@
+{
+  "statistics": {
+    "detectionDate": "2026-10-21T19:44:23.809Z",
+    "formats": {
+      "cpp": {
+        "sources": {
+          "scene/main/timer.cpp": {
+            "lines": 250,
+            "tokens": 1768,
+            "sources": 1,
+            "clones": 4,
+            "duplicatedLines": 36,
+            "duplicatedTokens": 258,
+            "percentage": 14.4,
+            "percentageTokens": 14.59,
+            "newDuplicatedLines": 0,
+            "newClones": 0
+          }
+        },
+        "total": {
+          "lines": 250,
+          "tokens": 1768,
+          "sources": 1,
+          "clones": 2,
+          "duplicatedLines": 18,
+          "duplicatedTokens": 129,
+          "percentage": 7.2,
+          "percentageTokens": 7.3,
+          "newDuplicatedLines": 0,
+          "newClones": 0
+        }
+      }
+    },
+    "total": {
+      "lines": 250,
+      "tokens": 1768,
+      "sources": 1,
+      "clones": 2,
+      "duplicatedLines": 18,
+      "duplicatedTokens": 129,
+      "percentage": 7.2,
+      "percentageTokens": 7.3,
+      "newDuplicatedLines": 0,
+      "newClones": 0
+    }
+  },
+  "duplicates": [
+    {
+      "format": "cpp",
+      "lines": 7,
+      "fragment": "()) {\n\t\t\t\treturn;\n\t\t\t}\n\t\t\tif (ignore_time_scale) {\n\t\t\t\ttime_left -= Engine::get_singleton()->get_process_step();\n\t\t\t} else {\n\t\t\t\ttime_left -= get_physics_process_delta_time",
+      "tokens": 53,
+      "firstFile": {
+        "name": "scene/main/timer.cpp",
+        "start": 72,
+        "end": 78,
+        "startLoc": {
+          "line": 72,
+          "column": 102,
+          "position": 349
+        },
+        "endLoc": {
+          "line": 78,
+          "column": 48,
+          "position": 402
+        }
+      },
+      "secondFile": {
+        "name": "scene/main/timer.cpp",
+        "start": 51,
+        "end": 57,
+        "startLoc": {
+          "line": 51,
+          "column": 97,
+          "position": 191
+        },
+        "endLoc": {
+          "line": 57,
+          "column": 40,
+          "position": 244
+        }
+      }
+    },
+    {
+      "format": "cpp",
+      "lines": 13,
+      "fragment": "();\n\t\t\t}\n\n\t\t\tif (time_left < 0) {\n\t\t\t\tif (!one_shot) {\n\t\t\t\t\ttime_left += wait_time;\n\t\t\t\t} else {\n\t\t\t\t\tstop();\n\t\t\t\t}\n\t\t\t\temit_signal(SNAME(\"timeout\"));\n\t\t\t}\n\t\t} break;\n\t}",
+      "tokens": 76,
+      "firstFile": {
+        "name": "scene/main/timer.cpp",
+        "start": 78,
+        "end": 90,
+        "startLoc": {
+          "line": 78,
+          "column": 48,
+          "position": 403
+        },
+        "endLoc": {
+          "line": 90,
+          "column": 3,
+          "position": 479
+        }
+      },
+      "secondFile": {
+        "name": "scene/main/timer.cpp",
+        "start": 57,
+        "end": 71,
+        "startLoc": {
+          "line": 57,
+          "column": 40,
+          "position": 245
+        },
+        "endLoc": {
+          "line": 71,
+          "column": 7,
+          "position": 323
+        }
+      }
+    }
+  ]
+}
